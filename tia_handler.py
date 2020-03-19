@@ -144,9 +144,11 @@ class TiaHandler(QObject):
     # Методы для работы с блоками
     # --------------------------------------------------------
 
-    @staticmethod
-    def get_all_blocks(sf_container):
-        grp = sf_container.Software.BlockGroup.Groups.Find('OB_FLT')
+    def get_all_blocks(self):
+        block_group = self.software_container.Software.BlockGroup
+        # print(self.get_blocks_recursively(block_group))
+        print(len(self.get_blocks_recursively(block_group)))
+
         # print(len(grp.Groups))
 
         # for item in sf_container.Software.BlockGroup.Groups:
@@ -156,6 +158,22 @@ class TiaHandler(QObject):
             #     print(itm.Name)
             #     for itm1 in itm.Groups:
             #         print(itm1.Name)
+
+    def get_blocks_recursively(self, block_group):
+        temp = []
+        for item in block_group.Blocks:
+            temp.append(item.Name)
+            print(item.Name)
+        for item in block_group.Groups:
+            temp = temp + self.get_blocks_recursively(item)
+        return temp
+
+    def get_block_by_name(self, block_group, name):
+        for item in block_group.Blocks:
+            if item.Name == name:
+                return item
+        for item in block_group.Groups:
+            self.get_blocks_recursively(item)
 
     def get_block_structure(self):
         my_dict = dict()
@@ -177,6 +195,12 @@ class TiaHandler(QObject):
     @staticmethod
     def import_block_xml(path_to_file, block_group):
         return block_group.Blocks.Import(FileInfo(path_to_file), tia.ImportOptions.Override)
+
+    def export_block(self, name):
+        block_group = self.software_container.Software.BlockGroup
+        block = self.get_block_by_name(block_group, name)
+        block.Export(FileInfo('Z:\\Projects\\Siemens\\BlockGenerator\\test_block.xml'), tia.ExportOptions.WithDefaults)
+
 
 # processes = self.get_running_instances()
 # mytia = processes[1].Attach()

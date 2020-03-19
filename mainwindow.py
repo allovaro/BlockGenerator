@@ -29,7 +29,6 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.project_tree.setModel(self.model)
         self.ui.project_tree.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self.model.setHorizontalHeaderLabels(['Дерево проекта'])
-        # self.model.setHeaderData(0, QtCore.Qt.Horizontal, 'PLC')
         self.ui.project_tree.setModel(self.model)
 
     def create_project_tree(self, children, parent):
@@ -45,6 +44,7 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.exit_action.triggered.connect(self.close)
         self.tia.attached_cpu.connect(self.print_cpu_tree)
         self.ui.project_tree.doubleClicked.connect(self.print_blocks_tree)
+        self.ui.export_button.clicked.connect(self.export_blocks)
 
     def slot_connect_tia(self):
         self.__processes = self.tia.get_running_instances()
@@ -62,8 +62,8 @@ class MyWindow(QtWidgets.QMainWindow):
         self.model.clear()
         self.model.setHorizontalHeaderLabels([title])
         self.tia.get_software_object(title)
-        dict = self.tia.get_block_structure()
-        self.create_program_blocks_tree(dict, self.model.invisibleRootItem())
+        dict_str = self.tia.get_block_structure()
+        self.create_program_blocks_tree(dict_str, self.model.invisibleRootItem())
 
     @staticmethod
     def get_children_list(parent):
@@ -157,6 +157,11 @@ class MyWindow(QtWidgets.QMainWindow):
         """
         temp = path.split('/')
         return list(filter(None, temp))
+
+    def export_blocks(self):
+        for item in self.ui.project_tree.selectedIndexes():
+            self.tia.export_block(self.model.itemFromIndex(item).text())
+            print(self.model.itemFromIndex(item).text())
 
     def init_logger(self):
         """
