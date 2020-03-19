@@ -13,8 +13,10 @@ class TiaHandler(QObject):
     logger = None
     tia_obj = None
     prj_obj = None
-    attached_cpu = pyqtSignal(list)
+    attached_cpu = pyqtSignal(dict)
     cpu = []
+    software_container = None
+    folders = []
 
     def __init__(self, parent=None):
         super(TiaHandler, self).__init__(parent)
@@ -36,8 +38,8 @@ class TiaHandler(QObject):
                     self.__connection = False
                 self.prj_obj = self.tia_obj.Projects[0]
                 # self.cpu = self.get_cpu_list()
+                # self.get_software_object()
                 self.attached_cpu.emit(self.get_cpu_list())
-                self.print_objects()
                 return True
         return False
 
@@ -48,6 +50,10 @@ class TiaHandler(QObject):
             return False
 
     def init_logger(self):
+        """
+        Initialization logger function to print information to log file
+        :return:
+        """
         self.logger = logging.getLogger("TiaHandler")
         self.logger.setLevel(logging.INFO)
 
@@ -65,23 +71,30 @@ class TiaHandler(QObject):
             for item in device_item_aggregation:
                 if item.Classification == tia.HW.DeviceItemClassifications.CPU:
                     cpu.append(item.Name)
-        return cpu if cpu else None
+        if cpu:
+            empty_list = []
+            return dict.fromkeys(cpu, empty_list)
+        return None
 
-
-    def print_objects(self):
+    def get_software_object(self, cpu_name):
+        """
+        Записывает в переменную self.software_container объект TIA портала для
+        дальшей работы с блоками, папками, тегами и так далее
+        :return:
+        """
         for device in self.prj_obj.Devices:
             device_item_aggregation = device.DeviceItems
-            # print('----------')
-            # print(device.Name)
-            # print(device.TypeIdentifier)
+            for device_item in device_item_aggregation:
+                if device_item.Name == cpu_name and device_item.Classification == tia.HW.DeviceItemClassifications.CPU:
+                    self.software_container = tia.IEngineeringServiceProvider(device_item).GetService[
+                        hwf.SoftwareContainer]()
 
-            for deviceitem in device_item_aggregation:
-                if deviceitem.Classification == tia.HW.DeviceItemClassifications.CPU:
-                    # print(f'Device name is: {deviceitem.Name}')
-                    software_container = tia.IEngineeringServiceProvider(deviceitem).GetService[hwf.SoftwareContainer]()
                     # software_container.Software.BlockGroup.Blocks.Import(FileInfo('Z:\\Projects\\Siemens\\BlockGenerator\\valve_no.xml'), tia.ImportOptions.Override)
                     # self.get_blocks(software_container)
-                    # self.get_folders_recursively(software_container.Software.BlockGroup, '/')
+                    # dict1 = self.get_folders()
+                    # print(dict1.get('/Мука/Силосы_тряпичные/STL2/'))
+
+                    # self.get_folders_recursively(self.software_container.Software.BlockGroup, '/')
                     # table = self.create_tag_table(software_container, 'wqe')
                     # table.Tags.Create('new_tag', 'Bool', '')
                     # table1 = self.find_tag_table(software_container, 'Aux1')
@@ -132,7 +145,7 @@ class TiaHandler(QObject):
     # --------------------------------------------------------
 
     @staticmethod
-    def get_blocks(sf_container):
+    def get_all_blocks(sf_container):
         grp = sf_container.Software.BlockGroup.Groups.Find('OB_FLT')
         # print(len(grp.Groups))
 
@@ -144,17 +157,22 @@ class TiaHandler(QObject):
             #     for itm1 in itm.Groups:
             #         print(itm1.Name)
 
+    def get_block_structure(self):
+        my_dict = dict()
+        self.folders = []
+        self.get_folders_recursively(self.software_container.Software.BlockGroup, '/')
+        for line in self.folders:
+            key = line.pop(0)
+            my_dict[key] = line
+        return my_dict
+
     def get_folders_recursively(self, block_group, lvl):
-        folders = []
-        blocks = []
-        folders.append(lvl)
+        temp = [lvl]
+        for item in block_group.Blocks:
+            temp.append(item.Name)
+        self.folders.append(temp)
         for item in block_group.Groups:
-            folders.append(item.Name)
             self.get_folders_recursively(item, lvl + item.Name + '/')
-        for itm in block_group.Blocks:
-            print(itm.Name)
-        if len(folders) > 1:
-            print(folders)
 
     @staticmethod
     def import_block_xml(path_to_file, block_group):

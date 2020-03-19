@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import (Qt, pyqtSignal)
-from tia_proc_ui import Ui_tia_chooser
+from tia_proc_ui import Ui_tia_chooser    # импорт сгенерированного файла для выбора процесса TIA
 import logging
 
 
