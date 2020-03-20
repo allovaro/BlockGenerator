@@ -45,12 +45,19 @@ class MyWindow(QtWidgets.QMainWindow):
         self.tia.attached_cpu.connect(self.print_cpu_tree)
         self.ui.project_tree.doubleClicked.connect(self.print_blocks_tree)
         self.ui.export_button.clicked.connect(self.export_blocks)
+        self.ui.path_folder.triggered.connect(self.slot_folder_template)
 
     def slot_connect_tia(self):
         self.__processes = self.tia.get_running_instances()
         window = TiaChoose(parent=self, tia=self.__processes)
         window.return_id.connect(self.tia.attach)
         window.show()
+
+    def slot_folder_template(self):
+        fname = str(QtWidgets.QFileDialog.getExistingDirectory(self, 'Выберите директорию хранения шаблонов'))
+        # print(fname)
+        print('hello folder')
+
 
     def print_cpu_tree(self, cpus):
         self.model.clear()

@@ -199,7 +199,7 @@ class TiaHandler(QObject):
     def export_block(self, name):
         block_group = self.software_container.Software.BlockGroup
         block = self.get_block_by_name(block_group, name)
-        block.Export(FileInfo('Z:\\Projects\\Siemens\\BlockGenerator\\test_block.xml'), tia.ExportOptions.WithDefaults)
+        block.Export(FileInfo('Z:\\Projects\\Siemens\\BlockGenerator\\' + name + '.xml'), tia.ExportOptions.WithDefaults)
 
 
 # processes = self.get_running_instances()

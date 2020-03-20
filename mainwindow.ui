@@ -674,6 +674,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     <property name="title">
      <string>Шаблоны</string>
     </property>
+    <addaction name="path_folder"/>
    </widget>
    <addaction name="menu_file"/>
    <addaction name="menu_project"/>
@@ -724,6 +725,11 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="path_folder">
+   <property name="text">
+    <string>Путь к файлам</string>
    </property>
   </action>
  </widget>

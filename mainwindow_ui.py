@@ -630,6 +630,8 @@ class Ui_MainWindow(object):
         self.sync_action.setObjectName("sync_action")
         self.exit_action = QtWidgets.QAction(MainWindow)
         self.exit_action.setObjectName("exit_action")
+        self.path_folder = QtWidgets.QAction(MainWindow)
+        self.path_folder.setObjectName("path_folder")
         self.menu_file.addAction(self.open_action)
         self.menu_file.addAction(self.save_action)
         self.menu_file.addAction(self.save_as_action)
@@ -637,6 +639,7 @@ class Ui_MainWindow(object):
         self.menu_file.addAction(self.exit_action)
         self.menu_project.addAction(self.connect_action)
         self.menu_project.addAction(self.sync_action)
+        self.menu_template.addAction(self.path_folder)
         self.menubar.addAction(self.menu_file.menuAction())
         self.menubar.addAction(self.menu_project.menuAction())
         self.menubar.addAction(self.menu_template.menuAction())
@@ -667,4 +670,5 @@ class Ui_MainWindow(object):
         self.sync_action.setText(_translate("MainWindow", "Синхронизировать"))
         self.exit_action.setText(_translate("MainWindow", "Выход"))
         self.exit_action.setShortcut(_translate("MainWindow", "Ctrl+Q"))
+        self.path_folder.setText(_translate("MainWindow", "Путь к файлам"))
 
