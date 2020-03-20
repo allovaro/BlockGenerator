@@ -1292,3 +1292,363 @@
 2020-03-20 08:49:30,280 - TiaChooser - INFO - window opened
 2020-03-20 08:49:33,334 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
 2020-03-20 08:49:35,400 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 09:01:20,443 - MyWindow - INFO - Program started
+2020-03-20 09:01:23,294 - TiaChooser - INFO - window opened
+2020-03-20 09:01:24,648 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 09:01:24,728 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 09:03:39,312 - MyWindow - INFO - Program started
+2020-03-20 09:04:43,647 - MyWindow - INFO - Program started
+2020-03-20 09:05:11,398 - MyWindow - INFO - Program started
+2020-03-20 09:06:03,833 - MyWindow - INFO - Program started
+2020-03-20 09:08:54,396 - MyWindow - INFO - Program started
+2020-03-20 09:09:10,751 - MyWindow - INFO - Program started
+2020-03-20 09:09:57,130 - MyWindow - INFO - Program started
+2020-03-20 09:10:52,608 - MyWindow - INFO - Program started
+2020-03-20 09:12:10,375 - MyWindow - INFO - Program started
+2020-03-20 09:12:20,683 - MyWindow - INFO - Program started
+2020-03-20 09:14:48,183 - MyWindow - INFO - Program started
+2020-03-20 09:15:56,141 - MyWindow - INFO - Program started
+2020-03-20 09:16:19,725 - MyWindow - INFO - Program started
+2020-03-20 09:17:25,231 - MyWindow - INFO - Program started
+2020-03-20 09:22:21,515 - MyWindow - INFO - Program started
+2020-03-20 09:22:32,296 - MyWindow - INFO - Program started
+2020-03-20 09:30:27,499 - MyWindow - INFO - Program started
+2020-03-20 09:31:26,441 - MyWindow - INFO - Program started
+2020-03-20 09:49:04,981 - MyWindow - INFO - Program started
+2020-03-20 09:49:52,565 - MyWindow - INFO - Program started
+2020-03-20 09:54:17,549 - MyWindow - INFO - Program started
+2020-03-20 09:54:53,956 - MyWindow - INFO - Program started
+2020-03-20 09:55:30,650 - MyWindow - INFO - Program started
+2020-03-20 10:01:15,996 - MyWindow - INFO - Program started
+2020-03-20 10:04:28,743 - MyWindow - INFO - Program started
+2020-03-20 10:06:09,753 - MyWindow - INFO - Program started
+2020-03-20 10:06:40,243 - MyWindow - INFO - Program started
+2020-03-20 10:09:05,854 - TiaChooser - INFO - window opened
+2020-03-20 10:09:11,898 - TiaChooser - INFO - window opened
+2020-03-20 10:09:27,271 - TiaChooser - INFO - window opened
+2020-03-20 10:09:27,271 - TiaChooser - INFO - window opened
+2020-03-20 10:09:27,271 - TiaChooser - INFO - window opened
+2020-03-20 10:09:28,522 - TiaChooser - INFO - window opened
+2020-03-20 10:09:28,522 - TiaChooser - INFO - window opened
+2020-03-20 10:09:28,522 - TiaChooser - INFO - window opened
+2020-03-20 10:09:32,462 - TiaChooser - INFO - window opened
+2020-03-20 10:09:32,462 - TiaChooser - INFO - window opened
+2020-03-20 10:09:32,462 - TiaChooser - INFO - window opened
+2020-03-20 10:09:32,462 - TiaChooser - INFO - window opened
+2020-03-20 10:09:32,462 - TiaChooser - INFO - window opened
+2020-03-20 10:09:35,357 - TiaHandler - INFO - Connected to None
+2020-03-20 10:10:03,853 - MyWindow - INFO - Program started
+2020-03-20 10:10:05,826 - TiaChooser - INFO - window opened
+2020-03-20 10:10:14,347 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 10:10:16,287 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 10:16:19,616 - MyWindow - INFO - Program started
+2020-03-20 10:16:23,960 - TiaChooser - INFO - window opened
+2020-03-20 10:16:26,520 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 10:16:26,617 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:04:11,962 - MyWindow - INFO - Program started
+2020-03-20 11:04:18,707 - TiaChooser - INFO - window opened
+2020-03-20 11:04:21,004 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:04:21,075 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:04:51,667 - MyWindow - INFO - Program started
+2020-03-20 11:04:58,474 - TiaChooser - INFO - window opened
+2020-03-20 11:05:00,162 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:05:00,248 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:05:20,297 - MyWindow - INFO - Program started
+2020-03-20 11:05:22,159 - TiaChooser - INFO - window opened
+2020-03-20 11:05:23,566 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:05:23,635 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:06:37,568 - MyWindow - INFO - Program started
+2020-03-20 11:06:41,151 - TiaChooser - INFO - window opened
+2020-03-20 11:06:44,325 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:06:44,405 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:07:36,748 - MyWindow - INFO - Program started
+2020-03-20 11:07:38,871 - TiaChooser - INFO - window opened
+2020-03-20 11:07:40,299 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:07:40,380 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:09:15,511 - MyWindow - INFO - Program started
+2020-03-20 11:09:18,619 - TiaChooser - INFO - window opened
+2020-03-20 11:09:19,910 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:09:19,986 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:09:38,854 - MyWindow - INFO - Program started
+2020-03-20 11:09:42,780 - TiaChooser - INFO - window opened
+2020-03-20 11:09:44,306 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:09:44,397 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:10:27,257 - MyWindow - INFO - Program started
+2020-03-20 11:10:31,514 - TiaChooser - INFO - window opened
+2020-03-20 11:10:33,432 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:10:33,535 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:13:45,915 - MyWindow - INFO - Program started
+2020-03-20 11:13:48,473 - TiaChooser - INFO - window opened
+2020-03-20 11:13:51,272 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:13:51,348 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:18:56,892 - MyWindow - INFO - Program started
+2020-03-20 11:19:00,768 - TiaChooser - INFO - window opened
+2020-03-20 11:19:03,158 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:19:03,224 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:20:28,815 - MyWindow - INFO - Program started
+2020-03-20 11:20:34,974 - TiaChooser - INFO - window opened
+2020-03-20 11:20:36,932 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:20:37,009 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:21:29,081 - MyWindow - INFO - Program started
+2020-03-20 11:21:31,999 - TiaChooser - INFO - window opened
+2020-03-20 11:21:33,881 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:21:33,978 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:22:31,519 - MyWindow - INFO - Program started
+2020-03-20 11:22:33,921 - TiaChooser - INFO - window opened
+2020-03-20 11:22:38,084 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:22:38,164 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:23:51,871 - MyWindow - INFO - Program started
+2020-03-20 11:23:55,229 - TiaChooser - INFO - window opened
+2020-03-20 11:23:59,364 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:23:59,456 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:24:38,280 - MyWindow - INFO - Program started
+2020-03-20 11:24:42,125 - TiaChooser - INFO - window opened
+2020-03-20 11:24:43,671 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:24:43,755 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:25:36,594 - MyWindow - INFO - Program started
+2020-03-20 11:25:40,311 - TiaChooser - INFO - window opened
+2020-03-20 11:25:41,620 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:25:41,697 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:25:55,029 - MyWindow - INFO - Program started
+2020-03-20 11:26:01,378 - TiaChooser - INFO - window opened
+2020-03-20 11:26:02,606 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:26:02,685 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:38:03,916 - MyWindow - INFO - Program started
+2020-03-20 11:38:08,511 - TiaChooser - INFO - window opened
+2020-03-20 11:38:09,875 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:38:09,953 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:42:43,179 - MyWindow - INFO - Program started
+2020-03-20 11:42:48,295 - TiaChooser - INFO - window opened
+2020-03-20 11:42:49,925 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:42:50,020 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:43:20,933 - MyWindow - INFO - Program started
+2020-03-20 11:43:23,302 - TiaChooser - INFO - window opened
+2020-03-20 11:43:27,714 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:43:27,787 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:44:55,563 - MyWindow - INFO - Program started
+2020-03-20 11:45:00,246 - TiaChooser - INFO - window opened
+2020-03-20 11:45:01,667 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:45:01,736 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:45:50,089 - MyWindow - INFO - Program started
+2020-03-20 11:45:52,085 - TiaChooser - INFO - window opened
+2020-03-20 11:45:53,464 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:45:53,547 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:46:20,455 - MyWindow - INFO - Program started
+2020-03-20 11:46:25,041 - TiaChooser - INFO - window opened
+2020-03-20 11:46:26,693 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:46:26,819 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:48:49,801 - MyWindow - INFO - Program started
+2020-03-20 11:48:51,632 - TiaChooser - INFO - window opened
+2020-03-20 11:48:53,044 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:48:53,121 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:50:25,413 - MyWindow - INFO - Program started
+2020-03-20 11:50:29,380 - TiaChooser - INFO - window opened
+2020-03-20 11:50:30,892 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:50:30,979 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:51:12,974 - MyWindow - INFO - Program started
+2020-03-20 11:51:15,805 - TiaChooser - INFO - window opened
+2020-03-20 11:51:19,955 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:51:20,029 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:53:27,822 - MyWindow - INFO - Program started
+2020-03-20 11:53:30,240 - TiaChooser - INFO - window opened
+2020-03-20 11:53:31,101 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:53:31,203 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:54:25,294 - MyWindow - INFO - Program started
+2020-03-20 11:54:29,127 - TiaChooser - INFO - window opened
+2020-03-20 11:54:30,360 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:54:30,431 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:56:49,254 - MyWindow - INFO - Program started
+2020-03-20 11:56:53,529 - TiaChooser - INFO - window opened
+2020-03-20 11:56:57,216 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:56:57,295 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:58:09,630 - MyWindow - INFO - Program started
+2020-03-20 11:58:12,581 - TiaChooser - INFO - window opened
+2020-03-20 11:58:15,929 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:58:16,012 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:58:27,269 - MyWindow - INFO - Program started
+2020-03-20 11:58:29,431 - TiaChooser - INFO - window opened
+2020-03-20 11:58:30,716 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 11:58:30,793 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:02:58,370 - MyWindow - INFO - Program started
+2020-03-20 12:03:01,378 - TiaChooser - INFO - window opened
+2020-03-20 12:03:03,009 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:03:03,078 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:04:24,009 - MyWindow - INFO - Program started
+2020-03-20 12:04:25,815 - TiaChooser - INFO - window opened
+2020-03-20 12:04:29,722 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:04:29,798 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:05:58,101 - MyWindow - INFO - Program started
+2020-03-20 12:06:15,830 - TiaChooser - INFO - window opened
+2020-03-20 12:06:17,450 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:06:17,534 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 12:09:56,961 - MyWindow - INFO - Program started
+2020-03-20 12:10:48,246 - MyWindow - INFO - Program started
+2020-03-20 12:11:12,115 - MyWindow - INFO - Program started
+2020-03-20 12:11:37,188 - MyWindow - INFO - Program started
+2020-03-20 12:13:00,678 - MyWindow - INFO - Program started
+2020-03-20 12:14:29,662 - MyWindow - INFO - Program started
+2020-03-20 12:15:02,611 - MyWindow - INFO - Program started
+2020-03-20 12:15:18,420 - MyWindow - INFO - Program started
+2020-03-20 12:16:05,820 - MyWindow - INFO - Program started
+2020-03-20 12:17:15,063 - MyWindow - INFO - Program started
+2020-03-20 13:01:01,591 - MyWindow - INFO - Program started
+2020-03-20 13:42:22,975 - MyWindow - INFO - Program started
+2020-03-20 13:42:25,471 - TiaChooser - INFO - window opened
+2020-03-20 13:42:30,153 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:42:30,229 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:43:48,548 - MyWindow - INFO - Program started
+2020-03-20 13:43:51,334 - TiaChooser - INFO - window opened
+2020-03-20 13:43:52,952 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:43:53,044 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:50:30,691 - MyWindow - INFO - Program started
+2020-03-20 13:50:35,314 - TiaChooser - INFO - window opened
+2020-03-20 13:50:36,864 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:50:36,951 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:52:15,953 - MyWindow - INFO - Program started
+2020-03-20 13:52:20,443 - TiaChooser - INFO - window opened
+2020-03-20 13:52:21,697 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:52:21,773 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:53:53,408 - MyWindow - INFO - Program started
+2020-03-20 13:53:57,040 - TiaChooser - INFO - window opened
+2020-03-20 13:53:58,050 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:53:58,134 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:54:47,562 - MyWindow - INFO - Program started
+2020-03-20 13:54:49,895 - TiaChooser - INFO - window opened
+2020-03-20 13:54:53,039 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:54:53,117 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:56:17,919 - MyWindow - INFO - Program started
+2020-03-20 13:56:21,462 - TiaChooser - INFO - window opened
+2020-03-20 13:56:22,618 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:56:22,687 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:57:19,648 - MyWindow - INFO - Program started
+2020-03-20 13:57:23,344 - TiaChooser - INFO - window opened
+2020-03-20 13:57:24,781 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:57:24,864 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:58:09,132 - MyWindow - INFO - Program started
+2020-03-20 13:58:12,935 - TiaChooser - INFO - window opened
+2020-03-20 13:58:14,073 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:58:14,158 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:58:53,640 - MyWindow - INFO - Program started
+2020-03-20 13:58:56,072 - TiaChooser - INFO - window opened
+2020-03-20 13:58:58,741 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:58:58,810 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:59:46,575 - MyWindow - INFO - Program started
+2020-03-20 13:59:49,225 - TiaChooser - INFO - window opened
+2020-03-20 13:59:51,599 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 13:59:51,675 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:00:30,799 - MyWindow - INFO - Program started
+2020-03-20 14:00:34,916 - TiaChooser - INFO - window opened
+2020-03-20 14:00:36,285 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:00:36,361 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:01:37,798 - MyWindow - INFO - Program started
+2020-03-20 14:01:40,583 - TiaChooser - INFO - window opened
+2020-03-20 14:01:44,283 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:01:44,357 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:03:10,979 - MyWindow - INFO - Program started
+2020-03-20 14:03:14,544 - TiaChooser - INFO - window opened
+2020-03-20 14:03:17,529 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:03:17,625 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:04:23,900 - MyWindow - INFO - Program started
+2020-03-20 14:04:27,170 - TiaChooser - INFO - window opened
+2020-03-20 14:04:28,160 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:04:28,237 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:09:15,330 - MyWindow - INFO - Program started
+2020-03-20 14:09:18,295 - TiaChooser - INFO - window opened
+2020-03-20 14:09:21,513 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:09:21,597 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:10:27,343 - MyWindow - INFO - Program started
+2020-03-20 14:10:31,014 - TiaChooser - INFO - window opened
+2020-03-20 14:10:32,304 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:10:32,413 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:11:39,054 - MyWindow - INFO - Program started
+2020-03-20 14:11:42,452 - TiaChooser - INFO - window opened
+2020-03-20 14:11:44,896 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:11:44,965 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:12:25,921 - MyWindow - INFO - Program started
+2020-03-20 14:12:30,254 - TiaChooser - INFO - window opened
+2020-03-20 14:12:32,164 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:12:32,253 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:20:55,303 - MyWindow - INFO - Program started
+2020-03-20 14:21:00,290 - TiaChooser - INFO - window opened
+2020-03-20 14:21:01,453 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:21:01,538 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:25:20,632 - MyWindow - INFO - Program started
+2020-03-20 14:25:26,718 - TiaChooser - INFO - window opened
+2020-03-20 14:25:27,897 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:25:27,972 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:26:05,386 - MyWindow - INFO - Program started
+2020-03-20 14:26:07,488 - TiaChooser - INFO - window opened
+2020-03-20 14:26:08,793 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:26:08,862 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:32:49,601 - MyWindow - INFO - Program started
+2020-03-20 14:32:51,838 - TiaChooser - INFO - window opened
+2020-03-20 14:32:54,588 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:32:54,662 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:33:34,440 - MyWindow - INFO - Program started
+2020-03-20 14:33:38,402 - TiaChooser - INFO - window opened
+2020-03-20 14:33:40,028 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:33:40,103 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:34:49,279 - MyWindow - INFO - Program started
+2020-03-20 14:34:52,896 - TiaChooser - INFO - window opened
+2020-03-20 14:34:53,870 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:34:53,960 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:35:59,882 - MyWindow - INFO - Program started
+2020-03-20 14:36:06,602 - TiaChooser - INFO - window opened
+2020-03-20 14:36:08,009 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:36:08,152 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:44:55,430 - MyWindow - INFO - Program started
+2020-03-20 14:45:00,993 - TiaChooser - INFO - window opened
+2020-03-20 14:45:03,517 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:45:03,604 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:50:23,596 - MyWindow - INFO - Program started
+2020-03-20 14:50:26,713 - TiaChooser - INFO - window opened
+2020-03-20 14:50:27,923 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:50:27,997 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:51:14,612 - MyWindow - INFO - Program started
+2020-03-20 14:51:17,341 - TiaChooser - INFO - window opened
+2020-03-20 14:51:18,665 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:51:18,740 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:52:46,016 - MyWindow - INFO - Program started
+2020-03-20 14:52:49,856 - TiaChooser - INFO - window opened
+2020-03-20 14:52:51,230 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:52:51,307 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:53:27,540 - MyWindow - INFO - Program started
+2020-03-20 14:53:31,162 - TiaChooser - INFO - window opened
+2020-03-20 14:53:32,601 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 14:53:32,697 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:00:52,096 - MyWindow - INFO - Program started
+2020-03-20 15:00:54,502 - TiaChooser - INFO - window opened
+2020-03-20 15:00:58,359 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:00:58,436 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:01:35,701 - MyWindow - INFO - Program started
+2020-03-20 15:01:38,426 - TiaChooser - INFO - window opened
+2020-03-20 15:01:41,191 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:01:41,285 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:02:28,859 - MyWindow - INFO - Program started
+2020-03-20 15:02:32,726 - TiaChooser - INFO - window opened
+2020-03-20 15:02:34,054 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:02:34,159 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:02:44,424 - MyWindow - INFO - ERROR
+2020-03-20 15:38:03,211 - MyWindow - INFO - Program started
+2020-03-20 15:38:09,115 - MyWindow - INFO - Program started
+2020-03-20 15:38:28,575 - MyWindow - INFO - Program started
+2020-03-20 15:38:31,539 - TiaChooser - INFO - window opened
+2020-03-20 15:38:35,204 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:38:35,276 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:39:20,434 - MyWindow - INFO - Program started
+2020-03-20 15:39:23,430 - TiaChooser - INFO - window opened
+2020-03-20 15:39:24,898 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:39:24,976 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:52:28,220 - MyWindow - INFO - Program started
+2020-03-20 15:52:30,523 - TiaChooser - INFO - window opened
+2020-03-20 15:52:31,709 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:52:31,779 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:54:27,079 - MyWindow - INFO - Program started
+2020-03-20 15:54:33,547 - TiaChooser - INFO - window opened
+2020-03-20 15:54:34,882 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:54:34,952 - TiaChooser - INFO - Z:\Projects\Siemens\CEPI_reload\CEPI_reload.ap14
+2020-03-20 15:59:46,865 - MyWindow - INFO - Program started
+2020-03-20 16:00:41,557 - MyWindow - INFO - Program started
+2020-03-20 16:01:01,898 - MyWindow - INFO - Program started
+2020-03-20 16:09:17,320 - MyWindow - INFO - Program started
+2020-03-20 16:09:21,517 - MyWindow - INFO - Program started

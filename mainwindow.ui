@@ -583,7 +583,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     <property name="geometry">
      <rect>
       <x>260</x>
-      <y>20</y>
+      <y>80</y>
       <width>791</width>
       <height>291</height>
      </rect>
@@ -602,7 +602,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="project_tab">
      <attribute name="title">
@@ -625,19 +625,6 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
      </layout>
     </widget>
    </widget>
-   <widget class="QPushButton" name="export_button">
-    <property name="geometry">
-     <rect>
-      <x>320</x>
-      <y>360</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Экспорт</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -656,6 +643,9 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     <addaction name="save_action"/>
     <addaction name="save_as_action"/>
     <addaction name="separator"/>
+    <addaction name="export_action"/>
+    <addaction name="import_action"/>
+    <addaction name="separator"/>
     <addaction name="exit_action"/>
    </widget>
    <widget class="QMenu" name="menu_project">
@@ -664,6 +654,7 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
     </property>
     <addaction name="connect_action"/>
     <addaction name="sync_action"/>
+    <addaction name="new_folder_action"/>
    </widget>
    <widget class="QMenu" name="menu_help">
     <property name="title">
@@ -730,6 +721,27 @@ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
   <action name="path_folder">
    <property name="text">
     <string>Путь к файлам</string>
+   </property>
+  </action>
+  <action name="export_action">
+   <property name="text">
+    <string>Экспорт</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="import_action">
+   <property name="text">
+    <string>Импорт</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="new_folder_action">
+   <property name="text">
+    <string>Новая папка</string>
    </property>
   </action>
  </widget>

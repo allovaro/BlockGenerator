@@ -4,6 +4,7 @@ clr.AddReference('C:\\Program Files\\Siemens\\Automation\\Portal V14\PublicAPI\\
 import Siemens.Engineering as tia
 import Siemens.Engineering.HW.Features as hwf
 from System.IO import DirectoryInfo, FileInfo
+import os
 from PyQt5.QtCore import (QObject, pyqtSignal)
 
 
@@ -45,6 +46,12 @@ class TiaHandler(QObject):
 
     def is_connected(self):
         if self.__connection:
+            return True
+        else:
+            return False
+
+    def is_plc(self):
+        if self.software_container:
             return True
         else:
             return False
@@ -140,40 +147,48 @@ class TiaHandler(QObject):
                 tags.append([tag.Name, tag.DataTypeName, tag.LogicalAddress])
             return tags
         return False
+
     # --------------------------------------------------------
-    # Методы для работы с блоками
+    # Методы для работы с блоками и папками
     # --------------------------------------------------------
-
-    def get_all_blocks(self):
-        block_group = self.software_container.Software.BlockGroup
-        # print(self.get_blocks_recursively(block_group))
-        print(len(self.get_blocks_recursively(block_group)))
-
-        # print(len(grp.Groups))
-
-        # for item in sf_container.Software.BlockGroup.Groups:
-        #     print(item.Groups)
-        #     print(item.Name)
-            # for itm in item.Groups:
-            #     print(itm.Name)
-            #     for itm1 in itm.Groups:
-            #         print(itm1.Name)
-
     def get_blocks_recursively(self, block_group):
+        """
+        Получить названия всех блоков одним списком
+        :param block_group:
+        :return:
+        """
         temp = []
         for item in block_group.Blocks:
             temp.append(item.Name)
-            print(item.Name)
+            # print(item.Name)
         for item in block_group.Groups:
             temp = temp + self.get_blocks_recursively(item)
         return temp
 
     def get_block_by_name(self, block_group, name):
+        """
+        По названию блока возвращает объект
+        :param block_group:
+        :param name:
+        :return:
+        """
         for item in block_group.Blocks:
             if item.Name == name:
                 return item
         for item in block_group.Groups:
             self.get_blocks_recursively(item)
+
+    def is_block(self, name):
+        """
+        Проверка по названию блок или папка
+        :param name:
+        :return: Если блок возвращает True
+        """
+        block_list = self.get_blocks_recursively(self.software_container.Software.BlockGroup)
+        for block in block_list:
+            if block == name:
+                return True
+        return False
 
     def get_block_structure(self):
         my_dict = dict()
@@ -192,9 +207,34 @@ class TiaHandler(QObject):
         for item in block_group.Groups:
             self.get_folders_recursively(item, lvl + item.Name + '/')
 
-    @staticmethod
-    def import_block_xml(path_to_file, block_group):
-        return block_group.Blocks.Import(FileInfo(path_to_file), tia.ImportOptions.Override)
+    def get_block_group(self, block_group, path):
+        group = None
+        if not path:
+            return block_group
+        for path_line in path:
+            group = block_group.Find(path_line)
+            if group:
+                if len(path) == 1:
+                    return group
+                return self.get_block_group(group.Groups, path[1:])
+        return group
+
+    def create_group(self, path, name):
+        path_list = list(filter(None, path.split('/')))
+        block_group = self.get_block_group(self.software_container.Software.BlockGroup.Groups, path_list)
+        block_group.Groups.Create(name)
+
+    def import_block(self, path_to_file, path_tia):
+        if os.path.exists(path_to_file):
+            if path_tia:
+                path_list = list(filter(None, path_tia.split('/')))
+                block_group = self.get_block_group(self.software_container.Software.BlockGroup.Groups, path_list)
+                return block_group.Blocks.Import(FileInfo(path_to_file), tia.ImportOptions.Override)
+            else:
+                return self.software_container.Software.BlockGroup.Blocks.Import(FileInfo(path_to_file),
+                                                                                 tia.ImportOptions.Override)
+        else:
+            return 'path to imported file does not exist'
 
     def export_block(self, name):
         block_group = self.software_container.Software.BlockGroup
