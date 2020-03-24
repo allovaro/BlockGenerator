@@ -1,4 +1,5 @@
 from PyQt5 import QtWidgets
+from PyQt5 import QtGui
 from PyQt5.QtCore import (Qt, pyqtSignal)
 from tia_proc_ui import Ui_tia_chooser    # импорт сгенерированного файла для выбора процесса TIA
 import logging
@@ -17,20 +18,27 @@ class TiaChoose(QtWidgets.QMainWindow, Ui_tia_chooser):
         coor = 5
         self.logger.info('window opened')
         if tia:
+            counter = 1
             for item in tia:
                 path = str(item.ProjectPath).split('\\')
-                buttons.append(QtWidgets.QPushButton(path[-1], self))
+                buttons.append(QtWidgets.QPushButton(str(counter) + '. ' + path[-1], self))
                 buttons[-1].setMinimumWidth(300)
                 buttons[-1].move(5, coor)
+                buttons[-1].setShortcut(str(counter))
                 buttons[-1].setToolTip(str(item.ProjectPath))
                 buttons[-1].clicked.connect(self.emit_signal)
                 coor += 30
+                counter += 1
         self.setGeometry(300, 300, 310, coor + 5)
 
     def emit_signal(self):
         self.return_id.emit(self.sender().toolTip())
         self.logger.info(self.sender().toolTip())
         self.close()
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Escape:
+            self.close()
 
     def init_logger(self):
         self.logger = logging.getLogger("TiaChooser")

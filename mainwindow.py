@@ -8,16 +8,20 @@ import sys
 import os
 import logging
 import configparser
+from templater import Templater
 
 
 class MyWindow(QtWidgets.QMainWindow):
     __processes = None
     logger = None
     tia = None
+    templater = None
     model = None
     templates_path = None
     template_conf = None
     activate_buttons = False
+    prj_config = None
+    prj_file_path = None
     plc_name = ''
 
     def __init__(self):
@@ -25,17 +29,24 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         self.init_logger()
+        self.init_project_table()
+        self.settings()
 
         self.logger.info("Program started")
         self.tia = TiaHandler()
+        # self.templater = Templater()
+        # self.templater.new_template('Test_temp')
         self.main_slots()  # Подключаем слоты
-        self.settings()
 
         self.model = QtGui.QStandardItemModel()
         self.ui.project_tree.setModel(self.model)
         self.ui.project_tree.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self.model.setHorizontalHeaderLabels(['Дерево проекта'])
         self.ui.project_tree.setModel(self.model)
+        self.ui.new_folder_action.setEnabled(False)
+        self.ui.sync_action.setEnabled(False)
+        self.ui.import_action.setEnabled(False)
+        self.ui.export_action.setEnabled(False)
 
     def create_project_tree(self, children, parent):
         self.model.setHorizontalHeaderLabels(['Дерево проекта'])
@@ -55,6 +66,11 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.path_folder.triggered.connect(self.slot_folder_template)
         self.ui.sync_action.triggered.connect(self.slot_sync_action)
         self.ui.new_folder_action.triggered.connect(self.slot_new_folder)
+        self.ui.open_action.triggered.connect(self.slot_open_project)
+        self.ui.save_action.triggered.connect(self.save_project)
+        self.ui.save_as_action.triggered.connect(self.save_project_as)
+        self.ui.new_row_action.triggered.connect(self.add_table_empty_line)
+        self.ui.tableWidget.cellActivated.connect(self.add_table_empty_line)
 
     def slot_connect_tia(self):
         self.__processes = self.tia.get_running_instances()
@@ -73,14 +89,31 @@ class MyWindow(QtWidgets.QMainWindow):
                 self.template_conf = self.templates_path + '/templates_params.conf'
                 self.create_config(self.template_conf)
 
+    def slot_open_project(self):
+        options = QtWidgets.QFileDialog.Options()
+        options |= QtWidgets.QFileDialog.DontUseNativeDialog
+        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self, "QFileDialog.getOpenFileName()", "",
+                                                             "All Files (*);;Project Files (*.prj)", options=options)
+        if fileName:
+            self.prj_file_path = fileName
+            self.prj_config = self.get_config(fileName)
+            for section in self.prj_config.sections():
+                if section == 'zones':
+                    pass
+                elif section == 'settings':
+                    pass
+                else:
+                    self.add_project_line(self.prj_config, section)
+
     def slot_sync_action(self):
         self.update_project_tree()
 
     def slot_new_folder(self):
         text, ok = QtWidgets.QInputDialog.getText(self, 'Input Dialog', 'Enter your name:')
-        QtWidgets.QInputDialog.textValueChanged.connect(test_func())
+        # QtWidgets.QInputDialog.textValueChanged.connect(test_func())
         if ok:
-            print(str(text))
+            self.tia.create_group(text)
+            self.update_project_tree()
 
     def test_func(self, text):
         print(text)
@@ -98,6 +131,10 @@ class MyWindow(QtWidgets.QMainWindow):
         self.tia.get_software_object(title)
         dict_str = self.tia.get_block_structure()
         self.create_program_blocks_tree(dict_str, self.model.invisibleRootItem())
+        self.ui.new_folder_action.setEnabled(True)
+        self.ui.sync_action.setEnabled(True)
+        self.ui.import_action.setEnabled(True)
+        self.ui.export_action.setEnabled(True)
 
     def update_project_tree(self):
         self.model.clear()
@@ -223,10 +260,6 @@ class MyWindow(QtWidgets.QMainWindow):
             except:
                 self.logger.info(error)
         self.update_project_tree()
-        # print(path)
-        # for pa in path:
-        #     print(pa)
-        # self.tia.import_block('Z:\\Projects\\Siemens\\BlockGenerator\\101M2_Compressor_Fan_Motor.xml', '/Мука/Силосы_металические/GBF1/')
 
     def get_path_by_item(self, item):
         if item.parent():
@@ -248,12 +281,124 @@ class MyWindow(QtWidgets.QMainWindow):
             config.read(path)
             self.templates_path = config.get('Settings', 'template_config_path')
 
+    def init_project_table(self):
+        self.ui.tableWidget.setColumnCount(18)  # Устанавливаем три колонки
+        self.ui.tableWidget.setRowCount(0)  # и одну строку в таблице
+        # Устанавливаем заголовки таблицы
+        self.ui.tableWidget.setHorizontalHeaderLabels(['Название блока', 'Шаблон', 'Имя элемента', 'Номер',
+                                                       'Сброс', 'Безопасность', 'Режим авто', 'Путь', 'Блок вызова',
+                                                       'Клапан NO/NC', 'Теги', 'Дат. давл. аналог.', 'Дат. давл. дискр',
+                                                       'SEQ_Pause', 'SEQ_in_Progress', 'Клапан вибросита',
+                                                       'Триг. фильтров', 'Симулятор'])
+        self.ui.tableWidget.resizeColumnsToContents()
+
+    def add_table_empty_line(self):
+        self.ui.tableWidget.setRowCount(self.ui.tableWidget.rowCount() + 1)
+        combo_templ = QtWidgets.QComboBox()
+        combo_templ.addItems(self.get_templates_list())
+        combo_tags = QtWidgets.QComboBox()
+        combo_tags.addItems(['', 'AUX', 'IO', 'AUX+IO'])
+        for column in range(self.ui.tableWidget.columnCount()):
+            self.ui.tableWidget.setItem(self.ui.tableWidget.rowCount() - 1, column, QtWidgets.QTableWidgetItem(''))
+        self.ui.tableWidget.setCellWidget(self.ui.tableWidget.rowCount() - 1, 1, combo_templ)
+        self.ui.tableWidget.setCellWidget(self.ui.tableWidget.rowCount() - 1, 10, combo_tags)
+
+    def copy_table_line(self, line_num):
+        row_num = self.ui.tableWidget.rowCount()
+        self.ui.tableWidget.setRowCount(row_num + 1)
+        combo_templ = QtWidgets.QComboBox()
+        combo_templ.addItems(self.get_templates_list())
+        self.ui.tableWidget.setCellWidget(row_num, 1, combo_templ)
+        self.ui.tableWidget.setItem(row_num, 0, QtWidgets.QTableWidgetItem("Texfffff"))
+        self.ui.tableWidget.resizeColumnsToContents()
+
+    def get_row_table(self, row):
+        ret = []
+        for i in range(self.ui.tableWidget.columnCount()):
+            print(i)
+            if i == 1:
+                ret.append(self.get_templ_from_table(row))
+            elif i == 10:
+                ret.append(self.get_tags_from_table(row))
+            else:
+                ret.append(self.ui.tableWidget.item(row, i).text())
+        return ret
+
+    def get_templ_from_table(self, row):
+        return self.ui.tableWidget.cellWidget(row, 1).currentText()
+
+    def get_tags_from_table(self, row):
+        return self.ui.tableWidget.cellWidget(row, 10).currentText()
+
+    def add_project_line(self, project, section):
+        row_num = self.ui.tableWidget.rowCount()
+        self.ui.tableWidget.setRowCount(row_num + 1)
+        combo_templ = QtWidgets.QComboBox()
+        combo_templ.addItems(self.get_templates_list())
+        combo_tags = QtWidgets.QComboBox()
+        combo_tags.addItems(['', 'AUX', 'IO', 'AUX+IO'])
+        counter = 1
+        self.ui.tableWidget.setItem(row_num, 0, QtWidgets.QTableWidgetItem(section))
+        for option in project.options(section):
+            value = project.get(section, option)
+            if option == 'шаблон':
+                self.ui.tableWidget.setCellWidget(row_num, 1, combo_templ)
+                self.ui.tableWidget.cellWidget(row_num, 1).setCurrentText(value)
+            elif option == 'теги':
+                self.ui.tableWidget.setCellWidget(row_num, 10, combo_tags)
+                self.ui.tableWidget.cellWidget(row_num, 10).setCurrentText(value)
+            else:
+                self.ui.tableWidget.setItem(row_num, counter, QtWidgets.QTableWidgetItem(value))
+            counter += 1
+        self.ui.tableWidget.resizeColumnsToContents()
+
+    def save_project(self):
+        new_config = configparser.ConfigParser()
+        for row in range(self.ui.tableWidget.rowCount()):
+            new_config.add_section(self.ui.tableWidget.item(row, 0).text())
+            for column in range(1, self.ui.tableWidget.columnCount()):
+                if column == 1 or column == 10:
+                    new_config.set(self.ui.tableWidget.item(row, 0).text(),
+                                   self.ui.tableWidget.horizontalHeaderItem(column).text(),
+                                   self.ui.tableWidget.cellWidget(row, column).currentText())
+                else:
+                    new_config.set(self.ui.tableWidget.item(row, 0).text(),
+                                   self.ui.tableWidget.horizontalHeaderItem(column).text(),
+                                   self.ui.tableWidget.item(row, column).text())
+        with open(self.prj_file_path, 'w') as config_file:
+            new_config.write(config_file)
+
+    def save_project_as(self):
+        options = QtWidgets.QFileDialog.Options()
+        options |= QtWidgets.QFileDialog.DontUseNativeDialog # Qt's builtin File Dialogue
+        fileName, _ = QtWidgets.QFileDialog.getSaveFileName(self, "Open", "", "All Files (*.prj)", options=options)
+        if fileName:
+            print(fileName[-4:])
+            if fileName[-4:] == '.prj':
+                self.prj_file_path = fileName
+            else:
+                self.prj_file_path = fileName + '.prj'
+            print(self.prj_file_path)
+            self.save_project()
+
+    @staticmethod
+    def get_templates_list():
+        # Каталог из которого будем брать изображения
+        directory = 'templates'
+        # Получаем список файлов в переменную files
+        files = os.listdir(directory)
+        # Фильтруем список
+        templ = list(filter(lambda x: x.endswith('.tpl'), files))
+        ret = []
+        for item in templ:
+            ret.append(item[:-4])
+        return ret
+
     @staticmethod
     def get_config(path):
         """
         Returns the config object
         """
-        path = 'settings.conf'
         if os.path.exists(path):
             config = configparser.ConfigParser()
             config.read(path)

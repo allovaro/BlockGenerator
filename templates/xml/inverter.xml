@@ -1,0 +1,2238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V14 SP1" />
+  <DocumentInfo>
+    <Created>2019-04-23T05:55:13.4851404Z</Created>
+    <ExportSetting>WithDefaults, WithReadOnly</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V14 SP1 Update 6</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V14 SP1 Update 6</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V14 SP1 Update 6</DisplayVersion>
+      </Product>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V14 SP1 Update 6</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.FB ID="0">
+    <AttributeList>
+      <AutoNumber>false</AutoNumber>
+      <CodeModifiedDate ReadOnly="true">2019-03-26T07:08:56.819049Z</CodeModifiedDate>
+      <CompileDate ReadOnly="true">2019-03-26T07:08:56.8434631Z</CompileDate>
+      <CreationDate ReadOnly="true">2019-02-26T05:18:41.6523018Z</CreationDate>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v2">
+  <Section Name="Input" />
+  <Section Name="Output" />
+  <Section Name="InOut" />
+  <Section Name="Static">
+    <Member Name="HMI" Datatype="Struct" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Member Name="CMD" Datatype="Struct"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Member Name="Start" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Команда старта вибратора</MultiLanguageText><MultiLanguageText Lang="ru-RU">Команда старт вращения</MultiLanguageText></Comment></Member><Member Name="Stop" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Команда останова вибратора</MultiLanguageText><MultiLanguageText Lang="ru-RU">Команда стоп вращения</MultiLanguageText></Comment></Member><Member Name="Spare_2" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_3" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_4" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_5" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Manual" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Ручной режим управления</MultiLanguageText></Comment></Member><Member Name="Reset_Error" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Сброс ошибок</MultiLanguageText><MultiLanguageText Lang="ru-RU">Сброс ошибок</MultiLanguageText></Comment></Member></Member><Member Name="DATA" Datatype="Struct"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Member Name="StatusWord" Datatype="Word"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Слово состояния блока управления</MultiLanguageText></Comment></Member><Member Name="Ref_Speed_Invertor" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Значение скорости задаваемое на инвертор</MultiLanguageText></Comment></Member><Member Name="Wait_Time" Datatype="DInt"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">48</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Время контроля включения реле</MultiLanguageText><MultiLanguageText Lang="ru-RU">Время задержки старта инвертора (*100msec)</MultiLanguageText></Comment><StartValue>5</StartValue></Member><Member Name="Man_Ref_Speed" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">80</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Скорость вращения в ручном режиме (Гц)</MultiLanguageText></Comment><StartValue>20.0</StartValue></Member><Member Name="Max_Invert_Speed" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">112</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Максимальная частота инвертора</MultiLanguageText></Comment><StartValue>50.0</StartValue></Member><Member Name="Overflow_Sensor_Time" Datatype="DInt"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">144</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Время контроля включения реле</MultiLanguageText><MultiLanguageText Lang="ru-RU">Время задержки опроса датчика переполнения шнека (*100msec)</MultiLanguageText></Comment><StartValue>2</StartValue></Member><Member Name="Sensor_Overflow_Not_OK" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">176</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Сработал датчик переполнения шнека</MultiLanguageText></Comment></Member><Member Name="Max_Lvl_RotorFider_Bunker" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">177</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Максимальный уровень смеси в накопителе роторного питателя подачи в силосы смеси</MultiLanguageText></Comment></Member><Member Name="Stop_Max_Lvl_RotorFider_Bunker" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">178</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Останов подачи смеси в накопитель по причине переполнения накопителя роторн. питателя</MultiLanguageText></Comment></Member><Member Name="Spare_10" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">179</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_9" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">180</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_8" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">181</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_7" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">182</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Spare_6" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">183</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member><Member Name="Auto_Ref_Speed_Fast" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">192</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Скорость вращения быстро в автом. режиме (Гц)</MultiLanguageText></Comment><StartValue>15.0</StartValue></Member><Member Name="Auto_Ref_Speed_Slow" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">224</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Скорость вращения медленно в автом. режиме (Гц)</MultiLanguageText></Comment><StartValue>35.0</StartValue></Member><Member Name="Max_Lvl_RotorFider_Bunker_Time" Datatype="DInt"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">256</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Время задержки опроса датчика переполнения накопителя роторного питателя (sec)</MultiLanguageText></Comment><StartValue>5</StartValue></Member></Member></Member>
+    <Member Name="Inverter" Datatype="&quot;Menage_Analog_Inverter&quot;"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">304</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Блок управления инвертором</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="Inverter_ON" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute></AttributeList></Member><Member Name="Start_Move" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute></AttributeList></Member><Member Name="Check_Motor_Connect" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute></AttributeList></Member><Member Name="Inverter_FAULT" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute></AttributeList></Member><Member Name="Reset_Alarm" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute></AttributeList></Member><Member Name="Emerg_STOP" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute></AttributeList></Member><Member Name="Man_Mode" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute></AttributeList></Member><Member Name="Overflow_Sensor_Check" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute></AttributeList></Member><Member Name="Refer_Speed" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute></AttributeList></Member></Section><Section Name="Output"><Member Name="Analog_RPM" Datatype="Word"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">48</IntegerAttribute></AttributeList></Member><Member Name="Analog_OUT_Data" Datatype="Int"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute></AttributeList></Member><Member Name="Status_Word" Datatype="Word"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">80</IntegerAttribute></AttributeList></Member><Member Name="Run_CMD" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute></AttributeList></Member><Member Name="Fault" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">97</IntegerAttribute></AttributeList></Member></Section><Section Name="InOut" /><Section Name="Static"><Member Name="ReferSpeed_TEMP" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">112</IntegerAttribute></AttributeList></Member><Member Name="Analog_Temp_WORD" Datatype="Word"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">144</IntegerAttribute></AttributeList></Member><Member Name="On_bit" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">160</IntegerAttribute></AttributeList></Member><Member Name="Off_bit" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">161</IntegerAttribute></AttributeList></Member></Section></Sections></Member>
+    <Member Name="Ramp" Datatype="&quot;Ramp_Calc&quot;"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">480</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Блок формирования рампы привода</MultiLanguageText></Comment><Sections><Section Name="Input"><Member Name="Tc" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute></AttributeList></Member><Member Name="InputValue_REAL" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">32</IntegerAttribute></AttributeList></Member><Member Name="TimeRmpUP" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute></AttributeList></Member><Member Name="TimeRmpDWN" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute></AttributeList></Member><Member Name="MaxOutValue_REAL" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">128</IntegerAttribute></AttributeList></Member></Section><Section Name="Output"><Member Name="RampOUT_REAL" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">160</IntegerAttribute></AttributeList></Member><Member Name="Err" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">192</IntegerAttribute></AttributeList></Member></Section><Section Name="InOut" /><Section Name="Static"><Member Name="Rmp" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">208</IntegerAttribute></AttributeList></Member><Member Name="PrevOutR" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">240</IntegerAttribute></AttributeList></Member><Member Name="Up" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">272</IntegerAttribute></AttributeList></Member><Member Name="Down" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">273</IntegerAttribute></AttributeList></Member><Member Name="Delta" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">288</IntegerAttribute></AttributeList></Member><Member Name="Step" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">320</IntegerAttribute></AttributeList></Member><Member Name="TempReal1" Datatype="Real"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">352</IntegerAttribute></AttributeList></Member></Section></Sections></Member>
+    <Member Name="TimerDriveStart" Datatype="TON" Version="1.0"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">864</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="IN" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute></AttributeList></Member><Member Name="PT" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute></AttributeList></Member></Section><Section Name="Output"><Member Name="Q" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">48</IntegerAttribute></AttributeList></Member><Member Name="ET" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute></AttributeList></Member></Section><Section Name="InOut" /><Section Name="Static"><Member Name="STATE" Datatype="Byte"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute></AttributeList></Member><Member Name="STIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">112</IntegerAttribute></AttributeList></Member><Member Name="ATIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">144</IntegerAttribute></AttributeList></Member></Section></Sections></Member>
+    <Member Name="TimerOverflow_Sensor" Datatype="TON" Version="1.0"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1040</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="IN" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute></AttributeList></Member><Member Name="PT" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute></AttributeList></Member></Section><Section Name="Output"><Member Name="Q" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">48</IntegerAttribute></AttributeList></Member><Member Name="ET" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute></AttributeList></Member></Section><Section Name="InOut" /><Section Name="Static"><Member Name="STATE" Datatype="Byte"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute></AttributeList></Member><Member Name="STIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">112</IntegerAttribute></AttributeList></Member><Member Name="ATIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">144</IntegerAttribute></AttributeList></Member></Section></Sections></Member>
+    <Member Name="Bunker_Time" Datatype="TON" Version="1.0"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1216</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="IN" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute></AttributeList></Member><Member Name="PT" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute></AttributeList></Member></Section><Section Name="Output"><Member Name="Q" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">48</IntegerAttribute></AttributeList></Member><Member Name="ET" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute></AttributeList></Member></Section><Section Name="InOut" /><Section Name="Static"><Member Name="STATE" Datatype="Byte"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute></AttributeList></Member><Member Name="STIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">112</IntegerAttribute></AttributeList></Member><Member Name="ATIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">144</IntegerAttribute></AttributeList></Member></Section></Sections></Member>
+    <Member Name="Stop_Timer" Datatype="TON" Version="1.0"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1392</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList><Sections><Section Name="Input"><Member Name="IN" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute></AttributeList></Member><Member Name="PT" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute></AttributeList></Member></Section><Section Name="Output"><Member Name="Q" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">48</IntegerAttribute></AttributeList></Member><Member Name="ET" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute></AttributeList></Member></Section><Section Name="InOut" /><Section Name="Static"><Member Name="STATE" Datatype="Byte"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute></AttributeList></Member><Member Name="STIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">112</IntegerAttribute></AttributeList></Member><Member Name="ATIME" Datatype="Time"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">144</IntegerAttribute></AttributeList></Member></Section></Sections></Member>
+    <Member Name="Ramp_SpdSet" Datatype="Real" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1568</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Задание скорости перемещения на блок обработки рампы</MultiLanguageText><MultiLanguageText Lang="en-US">Задание скорости перемещения на блок обработки рампы</MultiLanguageText><MultiLanguageText Lang="ru-RU">Задание скорости перемещения на блок обработки рампы</MultiLanguageText></Comment></Member>
+    <Member Name="SpeedRampOut" Datatype="Real" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1600</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Значение скорости перемещения после блока рампы</MultiLanguageText><MultiLanguageText Lang="en-US">Значение скорости перемещения после блока рампы</MultiLanguageText><MultiLanguageText Lang="ru-RU">Значение скорости перемещения после блока рампы</MultiLanguageText></Comment></Member>
+    <Member Name="Wait_Time" Datatype="Time" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1632</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="en-US">Время контроля включения реле</MultiLanguageText><MultiLanguageText Lang="ru-RU">Время задержки старта инвертора</MultiLanguageText></Comment></Member>
+    <Member Name="Overflow_Sensor_Time" Datatype="Time" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1664</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Время задержки опроса датчика переполнения</MultiLanguageText></Comment></Member>
+    <Member Name="Max_Lvl_RotorFider_Bunker_Time" Datatype="Time" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1696</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Время задержки опроса датчика переполнения накопителя роторного питателя</MultiLanguageText></Comment></Member>
+    <Member Name="ResetErr" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1728</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Сброс ошибок блока управления</MultiLanguageText><MultiLanguageText Lang="en-US">Сброс ошибок блока управления</MultiLanguageText><MultiLanguageText Lang="ru-RU">Сброс ошибок блока управления</MultiLanguageText></Comment></Member>
+    <Member Name="General_cond_OK" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1729</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Выполнены условия разрешения работы механизма</MultiLanguageText><MultiLanguageText Lang="en-US">Выполнены условия разрешения работы механизма</MultiLanguageText><MultiLanguageText Lang="ru-RU">Выполнены условия разрешения работы механизма</MultiLanguageText></Comment></Member>
+    <Member Name="ManCmd_MoveFwd" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1730</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Наличие команды на вращение вперёд в ручном</MultiLanguageText><MultiLanguageText Lang="en-US">Наличие команды на вращение вперёд в ручном</MultiLanguageText><MultiLanguageText Lang="ru-RU">Наличие команды на вращение вперёд в ручном</MultiLanguageText></Comment></Member>
+    <Member Name="Manual_Mode" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1731</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Ручной режим управления</MultiLanguageText><MultiLanguageText Lang="en-US">Ручной режим управления</MultiLanguageText><MultiLanguageText Lang="ru-RU">Ручной режим управления</MultiLanguageText></Comment></Member>
+    <Member Name="AutoCmd_MoveFast" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1732</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Наличие команды на вращение вперёд в автомате быстрая скорость</MultiLanguageText><MultiLanguageText Lang="en-US">Наличие команды на вращение вперёд в автомате быстрая скорость</MultiLanguageText><MultiLanguageText Lang="ru-RU">Наличие команды на вращение вперёд в автомате быстрая скорость</MultiLanguageText></Comment></Member>
+    <Member Name="AutoCmd_MoveSlow" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1733</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Наличие команды на вращение назад в автомате медленная скорость</MultiLanguageText><MultiLanguageText Lang="en-US">Наличие команды на вращение назад в автомате медленная скорость</MultiLanguageText><MultiLanguageText Lang="ru-RU">Наличие команды на вращение назад в автомате медленная скорость</MultiLanguageText></Comment></Member>
+    <Member Name="Sensor_Overflow_Not_OK" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1734</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Сработал датчик переполнения</MultiLanguageText></Comment></Member>
+    <Member Name="DriveStart" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1735</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Команда разрешения работы привода</MultiLanguageText><MultiLanguageText Lang="en-US">Команда разрешения работы привода</MultiLanguageText><MultiLanguageText Lang="ru-RU">Команда разрешения работы привода</MultiLanguageText></Comment></Member>
+    <Member Name="DriveEnable" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1736</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Команда на включение привода</MultiLanguageText><MultiLanguageText Lang="en-US">Команда на включение привода</MultiLanguageText><MultiLanguageText Lang="ru-RU">Команда на включение привода</MultiLanguageText></Comment></Member>
+    <Member Name="Motor_ON" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1737</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Наличие подключенного мотора к инвертору</MultiLanguageText><MultiLanguageText Lang="en-US">Наличие подключенного мотора к инвертору</MultiLanguageText><MultiLanguageText Lang="ru-RU">Наличие подключенного мотора к инвертору</MultiLanguageText></Comment></Member>
+    <Member Name="Cmd_Man_ON" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1738</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="it-IT">Наличие команды вращения в ручном режиме</MultiLanguageText><MultiLanguageText Lang="en-US">Наличие команды вращения в ручном режиме</MultiLanguageText><MultiLanguageText Lang="ru-RU">Наличие команды вращения в ручном режиме</MultiLanguageText></Comment></Member>
+    <Member Name="Stop_Max_Lvl_RotorFider_Bunker" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1739</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList><Comment><MultiLanguageText Lang="ru-RU">Останов подачи смеси в накопитель</MultiLanguageText></Comment></Member>
+    <Member Name="Spare" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1740</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="Spare_4" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1741</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="Spare_3" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1742</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+    <Member Name="Spare_2" Datatype="Bool" Remanence="SetInIDB"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1743</IntegerAttribute><BooleanAttribute Name="ExternalAccessible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalVisible" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="ExternalWritable" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Temp">
+    <Member Name="Temp_INT" Datatype="Int"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+    <Member Name="Temp_Bit" Datatype="Bool"><AttributeList><IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute><BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute><BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute><BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute></AttributeList></Member>
+  </Section>
+  <Section Name="Constant" />
+</Sections></Interface>
+      <InterfaceModifiedDate ReadOnly="true">2019-01-10T08:54:25.4366574Z</InterfaceModifiedDate>
+      <IsConsistent ReadOnly="true">true</IsConsistent>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <IsKnowHowProtected ReadOnly="true">false</IsKnowHowProtected>
+      <ISMultiInstanceCapable ReadOnly="true">true</ISMultiInstanceCapable>
+      <IsWriteProtected ReadOnly="true">false</IsWriteProtected>
+      <LibraryConformanceStatus ReadOnly="true">Warning: The object contains access to global data blocks.
+Warning: The block contains direct access to inputs, outputs, bit memories, indirect access to the registry or indirect access to external memory areas that are unknown at the time of compilation.
+</LibraryConformanceStatus>
+      <MemoryLayout ReadOnly="true">Standard</MemoryLayout>
+      <ModifiedDate ReadOnly="true">2019-03-26T07:08:56.819049Z</ModifiedDate>
+      <Name>453UF_Invertor</Name>
+      <Number>2031</Number>
+      <ParameterModified ReadOnly="true">2018-11-15T11:45:53.3082246Z</ParameterModified>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <StructureModified ReadOnly="true">2019-01-10T08:54:25.4366574Z</StructureModified>
+      <UDABlockProperties />
+      <UDAEnableTagReadback>false</UDAEnableTagReadback>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>ru-RU</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="4" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource />
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Системы_шкаф_Q4_Готовы" />
+        <Address Area="Memory" Type="Bool" BitOffset="280" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="General_cond_OK" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="23" />
+    <Part Name="Coil" UId="24" />
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="operand" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="23" Name="out" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="13" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Проверка готовности аварийных систем</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ïðîâåðêà ñîñòîÿíèÿ  ýëåêòðè÷åñêèõ öåïåé</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Системы_шкаф_Q4_Готовы" />
+        <Address Area="Memory" Type="Bool" BitOffset="280" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="453UF_ALL" />
+        <Address Area="Input" Type="Bool" BitOffset="396" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="DriveEnable" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="24" />
+    <Part Name="Contact" UId="25">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Coil" UId="26" />
+  </Parts>
+  <Wires>
+    <Wire UId="27">
+      <Powerrail />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+    <Wire UId="29">
+      <NameCon UId="24" Name="out" />
+      <NameCon UId="25" Name="in" />
+    </Wire>
+    <Wire UId="30">
+      <IdentCon UId="22" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+    <Wire UId="31">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="23" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Разрешение работы инвертора</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Âêëþ÷åíèå ïðèâîäà </Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="20" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="CMD" />
+        <Component Name="Reset_Error" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="Glob_rst" />
+        <Address Area="Memory" Type="Bool" BitOffset="656" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="ResetErr" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="UF_RST_Q4" />
+        <Address Area="Output" Type="Bool" BitOffset="393" Informative="true" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="25" />
+    <Part Name="Contact" UId="26" />
+    <Part Name="O" UId="27">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="28" />
+    <Part Name="Coil" UId="29" />
+  </Parts>
+  <Wires>
+    <Wire UId="30">
+      <Powerrail />
+      <NameCon UId="25" Name="in" />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="31">
+      <IdentCon UId="21" />
+      <NameCon UId="25" Name="operand" />
+    </Wire>
+    <Wire UId="32">
+      <NameCon UId="25" Name="out" />
+      <NameCon UId="27" Name="in1" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="22" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="34">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="27" Name="in2" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="23" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="21" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="25" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Сброс ошибок</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ñáðîñ îøèáîê</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="29" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="453SKM" />
+        <Address Area="Input" Type="Bool" BitOffset="397" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="Motor_ON" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="23" />
+    <Part Name="Coil" UId="24" />
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="23" Name="in" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="23" Name="operand" />
+    </Wire>
+    <Wire UId="27">
+      <NameCon UId="23" Name="out" />
+      <NameCon UId="24" Name="in" />
+    </Wire>
+    <Wire UId="28">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="2A" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="2B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="2D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="2E" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="2F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="30" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Проверка подключения мотора к инвертору</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="31" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ïðîâåðêà íàëè÷èÿ ïîäêëþ÷åííîãî ìîòîðà</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="32" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Overflow_Sensor_Time" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>DInt</ConstantType>
+        <ConstantValue>1000</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Overflow_Sensor_Time" />
+      </Symbol>
+    </Access>
+    <Part Name="Mul" UId="24">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="33" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="34" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="35" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="36" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="37" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="38" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Преобразование времени задаваемого с HMI в формат TIME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="39" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Преобразование времени задаваемого с HMI в формат TIME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="3B" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Glob_Mode" />
+        <Address Area="Memory" Type="Bool" BitOffset="657" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="CMD" />
+        <Component Name="Start" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Cmd_Man_ON" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Motor_ON" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="CMD" />
+        <Component Name="Stop" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="1_SCAN" />
+        <Address Area="Memory" Type="Bool" BitOffset="3" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="Inverter" />
+        <Component Name="Fault" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="ManCmd_MoveFwd" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="29">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="30" />
+    <Part Name="Contact" UId="31" />
+    <Part Name="Contact" UId="32" />
+    <Part Name="O" UId="33">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="34">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="35">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Contact" UId="36">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="O" UId="37">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Coil" UId="38" />
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in" />
+      <NameCon UId="31" Name="in" />
+      <NameCon UId="32" Name="in" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="22" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="37" Name="in1" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="operand" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="33" Name="in1" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="24" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in2" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="25" />
+      <NameCon UId="34" Name="operand" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="26" />
+      <NameCon UId="35" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="35" Name="out" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="27" />
+      <NameCon UId="36" Name="operand" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in2" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="28" />
+      <NameCon UId="38" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="3C" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="3D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="3F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="40" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="41" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="42" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Старт вращения в ручном режиме</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="43" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="44" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Glob_Mode" />
+        <Address Area="Memory" Type="Bool" BitOffset="657" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="453UF_AutoCmdMotor_Fast_ON" />
+        <Address Area="Memory" Type="Bool" BitOffset="386" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Motor_ON" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="SEQ_Dozator_powder_B2_Load_Pausa" />
+        <Address Area="Memory" Type="Bool" BitOffset="806" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="AutoCmd_MoveFast" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="26" />
+    <Part Name="Contact" UId="27" />
+    <Part Name="Contact" UId="28" />
+    <Part Name="Contact" UId="29">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Coil" UId="30" />
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <Powerrail />
+      <NameCon UId="26" Name="in" />
+    </Wire>
+    <Wire UId="32">
+      <IdentCon UId="21" />
+      <NameCon UId="26" Name="operand" />
+    </Wire>
+    <Wire UId="33">
+      <NameCon UId="26" Name="out" />
+      <NameCon UId="27" Name="in" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="operand" />
+    </Wire>
+    <Wire UId="35">
+      <NameCon UId="27" Name="out" />
+      <NameCon UId="28" Name="in" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="23" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="24" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="25" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="45" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="46" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="47" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="48" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="49" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="4A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Старт вращения в автоматическом режиме быстро</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="4C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ôîðìèðîâàíèå êîìàíä â àâòîìàòè÷åñêîì ðåæèìå áûñòðî</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="4D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Glob_Mode" />
+        <Address Area="Memory" Type="Bool" BitOffset="657" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="453UF_AutoCmdMotor_Slow_ON" />
+        <Address Area="Memory" Type="Bool" BitOffset="385" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="453UF_AutoCmdMotor_Fast_ON" />
+        <Address Area="Memory" Type="Bool" BitOffset="386" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Max_Lvl_RotorFider_Bunker" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="Motor_ON" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="SEQ_Dozator_powder_B2_Load_Pausa" />
+        <Address Area="Memory" Type="Bool" BitOffset="806" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="AutoCmd_MoveSlow" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="28" />
+    <Part Name="Contact" UId="29" />
+    <Part Name="Contact" UId="30" />
+    <Part Name="Contact" UId="31" />
+    <Part Name="O" UId="32">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="33" />
+    <Part Name="Contact" UId="34">
+      <Negated Name="operand" />
+    </Part>
+    <Part Name="Coil" UId="35" />
+  </Parts>
+  <Wires>
+    <Wire UId="36">
+      <Powerrail />
+      <NameCon UId="28" Name="in" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="21" />
+      <NameCon UId="28" Name="operand" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="28" Name="out" />
+      <NameCon UId="29" Name="in" />
+      <NameCon UId="30" Name="in" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="22" />
+      <NameCon UId="29" Name="operand" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="29" Name="out" />
+      <NameCon UId="32" Name="in1" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="23" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="31" Name="in" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="operand" />
+    </Wire>
+    <Wire UId="44">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="32" Name="in2" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="operand" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="26" />
+      <NameCon UId="34" Name="operand" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="in" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="27" />
+      <NameCon UId="35" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="4F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="50" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="51" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="52" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="53" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="54" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Старт вращения в автоматическом режиме медленно</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="55" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ôîðìèðîâàíèå êîìàíä â àâòîìàòè÷åñêîì ðåæèìå ìåäëåííî</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="56" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Wait_Time" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>DInt</ConstantType>
+        <ConstantValue>100</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Wait_Time" />
+      </Symbol>
+    </Access>
+    <Part Name="Mul" UId="24">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="57" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="58" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="59" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Преобразование времени задаваемого с HMI в формат TIME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Преобразование времени задаваемого с HMI в формат TIME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="5F" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="ManCmd_MoveFwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="AutoCmd_MoveFast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="AutoCmd_MoveSlow" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Wait_Time" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="TimerDriveStart" />
+        <Component Name="Q" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="TimerDriveStart" />
+        <Component Name="ET" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="TimerDriveStart" />
+        <Component Name="Q" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="DriveEnable" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="DriveStart" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="30" />
+    <Part Name="Contact" UId="31" />
+    <Part Name="Contact" UId="32" />
+    <Part Name="O" UId="33">
+      <TemplateValue Name="Card" Type="Cardinality">3</TemplateValue>
+    </Part>
+    <Part Name="TON" Version="1.0" UId="34">
+      <Instance UId="35" Scope="LocalVariable">
+        <Component Name="TimerDriveStart" />
+      </Instance>
+      <TemplateValue Name="time_type" Type="Type">Time</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="36" />
+    <Part Name="Contact" UId="37" />
+    <Part Name="Coil" UId="38" />
+  </Parts>
+  <Wires>
+    <Wire UId="39">
+      <Powerrail />
+      <NameCon UId="34" Name="en" />
+      <NameCon UId="30" Name="in" />
+      <NameCon UId="31" Name="in" />
+      <NameCon UId="32" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="21" />
+      <NameCon UId="30" Name="operand" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="30" Name="out" />
+      <NameCon UId="33" Name="in1" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="operand" />
+    </Wire>
+    <Wire UId="43">
+      <NameCon UId="31" Name="out" />
+      <NameCon UId="33" Name="in2" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="23" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="45">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in3" />
+    </Wire>
+    <Wire UId="46">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="IN" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="24" />
+      <NameCon UId="34" Name="PT" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="34" Name="eno" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="Q" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="34" Name="ET" />
+      <IdentCon UId="26" />
+    </Wire>
+    <Wire UId="51">
+      <IdentCon UId="27" />
+      <NameCon UId="36" Name="operand" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="36" Name="out" />
+      <NameCon UId="37" Name="in" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="28" />
+      <NameCon UId="37" Name="operand" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="37" Name="out" />
+      <NameCon UId="38" Name="in" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="29" />
+      <NameCon UId="38" Name="operand" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="60" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="61" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="62" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="63" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="64" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="65" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="66" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Формирование команды RUN для инвертора</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="67" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ôîðìèðîâàíèå êîìàíäû ñòàðòà ðàáîòû èíâåðòîðà</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="68" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="AutoCmd_MoveFast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Auto_Ref_Speed_Fast" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="AutoCmd_MoveSlow" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Auto_Ref_Speed_Slow" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="25">
+      <Symbol>
+        <Component Name="ManCmd_MoveFwd" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Man_Ref_Speed" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="SEQ_Dozator_powder_B2_Load_Pausa" />
+        <Address Area="Memory" Type="Bool" BitOffset="806" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Real</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Real</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="Ramp_SpdSet" />
+      </Symbol>
+    </Access>
+    <Call UId="31">
+      <CallInfo Name="Selector_4_REAL" BlockType="FC">
+        <IntegerAttribute Name="BlockNumber" Informative="true">232</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2006-04-04T10:33:40</DateAttribute>
+        <Parameter Name="Sel1" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In1" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Sel2" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In2" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Sel3" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In3" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Sel4" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In4" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Default" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="OUT" Section="Output" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="32">
+      <Powerrail />
+      <NameCon UId="31" Name="en" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="21" />
+      <NameCon UId="31" Name="Sel1" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="31" Name="In1" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="23" />
+      <NameCon UId="31" Name="Sel2" />
+    </Wire>
+    <Wire UId="36">
+      <IdentCon UId="24" />
+      <NameCon UId="31" Name="In2" />
+    </Wire>
+    <Wire UId="37">
+      <IdentCon UId="25" />
+      <NameCon UId="31" Name="Sel3" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="26" />
+      <NameCon UId="31" Name="In3" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="27" />
+      <NameCon UId="31" Name="Sel4" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="28" />
+      <NameCon UId="31" Name="In4" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="29" />
+      <NameCon UId="31" Name="Default" />
+    </Wire>
+    <Wire UId="42">
+      <NameCon UId="31" Name="OUT" />
+      <IdentCon UId="30" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="69" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="6A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6D" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="6E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Селектор скоростей</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="70" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Ñåëåêòîð ñêîðîñòåé</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="71" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="General_cond_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="DriveEnable" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="OB1_CTime_REAL" />
+        <Address Area="Memory" Type="Real" BitOffset="64" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Ramp_SpdSet" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.001</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Real</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>0.001</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Real</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Real</ConstantType>
+        <ConstantValue>50.0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Real</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="SpeedRampOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="29">
+      <Symbol>
+        <Component Name="Ramp" />
+        <Component Name="Err" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="SpeedRampOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Ref_Speed_Invertor" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="32" />
+    <Part Name="Contact" UId="33" />
+    <Call UId="34">
+      <CallInfo Name="Ramp_Calc" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">222</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2018-11-15T11:12:51</DateAttribute>
+        <Instance UId="35" Scope="LocalVariable">
+          <Component Name="Ramp" />
+        </Instance>
+        <Parameter Name="Tc" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="InputValue_REAL" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="TimeRmpUP" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="TimeRmpDWN" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="MaxOutValue_REAL" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="RampOUT_REAL" Section="Output" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Err" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+    <Part Name="Move" UId="36">
+      <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="37">
+      <Powerrail />
+      <NameCon UId="32" Name="in" />
+    </Wire>
+    <Wire UId="38">
+      <IdentCon UId="21" />
+      <NameCon UId="32" Name="operand" />
+    </Wire>
+    <Wire UId="39">
+      <NameCon UId="32" Name="out" />
+      <NameCon UId="33" Name="in" />
+    </Wire>
+    <Wire UId="40">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="operand" />
+    </Wire>
+    <Wire UId="41">
+      <NameCon UId="33" Name="out" />
+      <NameCon UId="34" Name="en" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="34" Name="Tc" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="34" Name="InputValue_REAL" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="34" Name="TimeRmpUP" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="26" />
+      <NameCon UId="34" Name="TimeRmpDWN" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="27" />
+      <NameCon UId="34" Name="MaxOutValue_REAL" />
+    </Wire>
+    <Wire UId="47">
+      <NameCon UId="34" Name="eno" />
+      <NameCon UId="36" Name="en" />
+    </Wire>
+    <Wire UId="48">
+      <NameCon UId="34" Name="RampOUT_REAL" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="34" Name="Err" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="50">
+      <IdentCon UId="30" />
+      <NameCon UId="36" Name="in" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="36" Name="out1" />
+      <IdentCon UId="31" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="72" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="73" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="74" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="75" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>MaxOutValue - ìàêñèìàëüíîå ÷èñëî % çàäàíèÿ ïðèâîäà</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="76" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="77" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="78" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Расчет рампы задания на инвертор</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="79" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Îáðàáîòêà âûáðàííîãî çíà÷åíèÿ ñêîðîñòè äëÿ ôîðìèðîâàíèÿ ðàìïû</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="7A" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="Glob_Mode" />
+        <Address Area="Memory" Type="Bool" BitOffset="657" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="22">
+      <Symbol>
+        <Component Name="DriveEnable" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="DriveStart" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="24">
+      <Symbol>
+        <Component Name="Motor_ON" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="453UF_ALL" />
+        <Address Area="Input" Type="Bool" BitOffset="396" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="26">
+      <Symbol>
+        <Component Name="ResetErr" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="27">
+      <Symbol>
+        <Component Name="General_cond_OK" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="28">
+      <Symbol>
+        <Component Name="SpeedRampOut" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="P_453UF_RPM" SimpleAccessModifier="Periphery" />
+        <Address Area="PeripheryOutput" Type="Word" BitOffset="4288" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="30">
+      <Symbol>
+        <Component Name="Temp_INT" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="31">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="StatusWord" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="453UF_RUN" />
+        <Address Area="Output" Type="Bool" BitOffset="417" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="Faults" />
+        <Component Name="Fault_struct" />
+        <Component Name="Fault_name" />
+        <Address Area="DB" Type="Bool" BlockNumber="10" BitOffset="501" Informative="true" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="34">
+      <Negated Name="operand" />
+    </Part>
+    <Call UId="35">
+      <CallInfo Name="Menage_Analog_Inverter" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">308</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2018-11-15T11:43:58</DateAttribute>
+        <Instance UId="36" Scope="LocalVariable">
+          <Component Name="Inverter" />
+        </Instance>
+        <Parameter Name="Inverter_ON" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Start_Move" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Check_Motor_Connect" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Inverter_FAULT" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Reset_Alarm" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Emerg_STOP" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Man_Mode" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Overflow_Sensor_Check" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Refer_Speed" Section="Input" Type="Real">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Analog_RPM" Section="Output" Type="Word">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Analog_OUT_Data" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Status_Word" Section="Output" Type="Word">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Run_CMD" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Fault" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="38">
+      <Powerrail />
+      <NameCon UId="35" Name="en" />
+      <NameCon UId="34" Name="in" />
+    </Wire>
+    <Wire UId="39">
+      <IdentCon UId="21" />
+      <NameCon UId="34" Name="operand" />
+    </Wire>
+    <Wire UId="40">
+      <NameCon UId="34" Name="out" />
+      <NameCon UId="35" Name="Man_Mode" />
+    </Wire>
+    <Wire UId="41">
+      <IdentCon UId="22" />
+      <NameCon UId="35" Name="Inverter_ON" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="23" />
+      <NameCon UId="35" Name="Start_Move" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="24" />
+      <NameCon UId="35" Name="Check_Motor_Connect" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="25" />
+      <NameCon UId="35" Name="Inverter_FAULT" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="26" />
+      <NameCon UId="35" Name="Reset_Alarm" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="27" />
+      <NameCon UId="35" Name="Emerg_STOP" />
+    </Wire>
+    <Wire UId="47">
+      <OpenCon UId="37" />
+      <NameCon UId="35" Name="Overflow_Sensor_Check" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="28" />
+      <NameCon UId="35" Name="Refer_Speed" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="35" Name="Analog_RPM" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="35" Name="Analog_OUT_Data" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="35" Name="Status_Word" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="35" Name="Run_CMD" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="35" Name="Fault" />
+      <IdentCon UId="33" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="7B" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="7C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="7E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="7F" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="80" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="81" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Блок управления инвертором</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="82" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text>Óïðàâëåíèå èíâåðòîðîì</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="83" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">
+  <Parts>
+    <Access Scope="LocalVariable" UId="21">
+      <Symbol>
+        <Component Name="HMI" />
+        <Component Name="DATA" />
+        <Component Name="Max_Lvl_RotorFider_Bunker_Time" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>DInt</ConstantType>
+        <ConstantValue>1000</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LocalVariable" UId="23">
+      <Symbol>
+        <Component Name="Max_Lvl_RotorFider_Bunker_Time" />
+      </Symbol>
+    </Access>
+    <Part Name="Mul" UId="24">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+      <TemplateValue Name="SrcType" Type="Type">DInt</TemplateValue>
+    </Part>
+  </Parts>
+  <Wires>
+    <Wire UId="25">
+      <Powerrail />
+      <NameCon UId="24" Name="en" />
+    </Wire>
+    <Wire UId="26">
+      <IdentCon UId="21" />
+      <NameCon UId="24" Name="in1" />
+    </Wire>
+    <Wire UId="27">
+      <IdentCon UId="22" />
+      <NameCon UId="24" Name="in2" />
+    </Wire>
+    <Wire UId="28">
+      <NameCon UId="24" Name="out" />
+      <IdentCon UId="23" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="84" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="85" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="86" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="87" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="88" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="89" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Преобразование времени задаваемого с HMI в формат TIME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text>Преобразование времени задаваемого с HMI в формат TIME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="8B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>it-IT</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="8C" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="8D" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8E" CompositionName="Items">
+            <AttributeList>
+              <Culture>ru-RU</Culture>
+              <Text></Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="8F" CompositionName="Items">
+            <AttributeList>
+              <Culture>it-IT</Culture>
+              <Text>Блок управления инвертором 111UF</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.FB>
+</Document>

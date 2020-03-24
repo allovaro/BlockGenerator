@@ -6,6 +6,8 @@ import Siemens.Engineering.HW.Features as hwf
 from System.IO import DirectoryInfo, FileInfo
 import os
 from PyQt5.QtCore import (QObject, pyqtSignal)
+from lxml import etree, objectify
+import re
 
 
 class TiaHandler(QObject):
@@ -18,11 +20,13 @@ class TiaHandler(QObject):
     cpu = []
     software_container = None
     folders = []
+    ExportPath = 'templates/xml/'
 
     def __init__(self, parent=None):
         super(TiaHandler, self).__init__(parent)
         self.init_logger()
-        pass
+        # self.compressor_cmd('57M_Compressor', '7898', 'No', 'No', '57M',
+        #                     'Powder_B2_Load_Auto_Mode', 'Reset_Err_Silos_Area', 'Системы_шкаф_Q1_Готовы', 'FaultName.Melnica')
 
     def get_running_instances(self):
         self.__processes = tia.TiaPortal.GetProcesses()
@@ -160,7 +164,6 @@ class TiaHandler(QObject):
         temp = []
         for item in block_group.Blocks:
             temp.append(item.Name)
-            # print(item.Name)
         for item in block_group.Groups:
             temp = temp + self.get_blocks_recursively(item)
         return temp
@@ -176,7 +179,9 @@ class TiaHandler(QObject):
             if item.Name == name:
                 return item
         for item in block_group.Groups:
-            self.get_blocks_recursively(item)
+            block = self.get_block_by_name(item, name)
+            if block:
+                return block
 
     def is_block(self, name):
         """
@@ -214,17 +219,24 @@ class TiaHandler(QObject):
         for path_line in path:
             group = block_group.Find(path_line)
             if group:
+                print(group.Name)
                 if len(path) == 1:
                     return group
                 return self.get_block_group(group.Groups, path[1:])
-        return group
+        return block_group
 
-    def create_group(self, path, name):
+    def create_group(self, path):
         path_list = list(filter(None, path.split('/')))
-        block_group = self.get_block_group(self.software_container.Software.BlockGroup.Groups, path_list)
-        block_group.Groups.Create(name)
+        if len(path_list) > 1:
+            print(path_list)
+            block_group = self.get_block_group(self.software_container.Software.BlockGroup.Groups, path_list)
+            block_group.Create(path_list[-1])
+        else:
+            if path_list:
+                self.software_container.Software.BlockGroup.Groups.Create(path_list[0])
 
     def import_block(self, path_to_file, path_tia):
+        print(path_tia)
         if os.path.exists(path_to_file):
             if path_tia:
                 path_list = list(filter(None, path_tia.split('/')))
@@ -239,54 +251,194 @@ class TiaHandler(QObject):
     def export_block(self, name):
         block_group = self.software_container.Software.BlockGroup
         block = self.get_block_by_name(block_group, name)
-        block.Export(FileInfo('Z:\\Projects\\Siemens\\BlockGenerator\\' + name + '.xml'), tia.ExportOptions.WithDefaults)
+        if block:
+            self.logger.info('Block ' + name + ' was exported')
+            block.Export(FileInfo('Z:\\Projects\\Siemens\\BlockGenerator\\export\\' + name + '.xml'),
+                         tia.ExportOptions.WithDefaults)
+        else:
+            self.logger.error('Block ' + name + ' was not found')
 
+    # --------------------------------------------------------
+    # Методы для подготовки xml файла для импорта в TIA
+    # --------------------------------------------------------
+    def compressor_cmd(self, name, num, ps, psa, m, autoname, rstname, alarmname, faultname):
+        # Пути для исходного xml файла и конечного
+        path_to_source = self.ExportPath + 'compressor.xml'
+        path_to_dest = self.ExportPath + 'tmp/' + name + '.xml'
 
-# processes = self.get_running_instances()
-# mytia = processes[1].Attach()
-# my_project = mytia.Projects[0]  # Подключаемся к первому проекту в этом экземпляре TIA
-# for device in my_project.Devices:
-#     device_item_aggregation = device.DeviceItems
-#     print('----------')
-#     print(device.Name)
-#     for deviceitem in device_item_aggregation:
-#             software_container = tia.IEngineeringServiceProvider(deviceitem).GetService[hwf.SoftwareContainer]()
-#             if (software_container):
-#                 print(f'Device name: {deviceitem.Name}')
-#                 software_base = software_container.Software
-#--------------------------------------------------------------------------------------------------
-            # Starting TIA
-            # print ('Connecting TIA')
-            # item = tia.TiaPortal.GetProcesses()  # Смотрим запущенные процессы TIA
-            # print(item[1].ProjectPath)  # Выводим путь открытого проекта
-            # mytia = item[1].Attach()  # Подключаемся к первому экземпляру
-            # my_project = mytia.Projects[0]  # Подключаемся к первому проекту в этом экземпляре TIA
-            # software_container = tia.IEngineeringServiceProvider(PLC1.DeviceItems[1]).GetService[hwf.SoftwareContainer]()
-            # for device in my_project.Devices:
-            #     device_item_aggregation = device.DeviceItems
-            #     print(device)
+        # Удаление из xml строк которые мешают его обработке библиотекой lxml
+        self.preparing_xml(path_to_source, name)
 
-            # print(my_project.Devices[0].DeviceItems[1])
-# software_container = tia.IEngineeringServiceProvider(my_project.Devices[0].DeviceItems[0]).GetService[hwf.SoftwareContainer]()
-# software_container = tia.IEngineeringServiceProvider(my_project.Devices[0].DeviceItems[0]).GetService[hwf.SoftwareContainer]()
-# print(software_container)
-# print(my_project.Devices.Find('CEPI_317PN/DP'))
-# print(my_project.Devices[1].GetAttribute('TypeName'))
-# for item in my_project.Devices:
-#     print(item.GetAttribute('TypeName'))
-# print(my_project.Devices[0].DeviceItems[0].GetService())
+        # Замена названий блока, переменных и коментариев
+        self.set_block_name(path_to_dest, name, num)
+        self.change_glob_var_names(path_to_dest, 'Glob_rst', rstname)
+        self.change_glob_var_names(path_to_dest, 'Glob_Mode', autoname)
+        self.change_glob_var_names(path_to_dest, 'Системы_шкаф_Q4_Готовы', alarmname)
+        # Поиск бита аварии в Faults блоке данных
+        if os.path.isfile(self.ExportPath + 'Faults.xml') and ps != 'No':
+            path1, path2 = find_elem_by_name(self.ExportPath + 'Faults.xml', ps)
+            self.change_glob_var_names(path_to_dest, 'Fault_name_2', path2)
+        self.change_glob_var_names(path_to_dest, 'Fault_struct', faultname.split('.')[0])
+        self.change_glob_var_names(path_to_dest, 'Fault_name', faultname.split('.')[1])
+        self.change_var_names(path_to_dest, '408', m[:-1])
+        self.change_glob_var_names(path_to_dest, '408', m[:-1])
 
-# mytia = tia.TiaPortal(tia.TiaPortalMode.WithUserInterface)
+        # Добавление нетворка обработки дискретного датчика давления
+        if ps != 'No' or '':
+            self.change_glob_var_names(path_to_dest, '498VS', ps)
+        else:
+            self.delete_network(path_to_dest, '17')
+            self.delete_network(path_to_dest, '20')
+            self.delete_network(path_to_dest, '29')
+            self.delete_network(path_to_dest, '32')
+            self.delete_network(path_to_dest, '3B')
 
-# #Creating new project
-# print ('Creating project')
-# myproject = mytia.Projects.Create(project_path, project_name)
-#
-# #Addding Stations
-# print ('Creating station 1')
-# station1_mlfb = 'OrderNumber:6ES7 515-2AM01-0AB0/V2.6'
-# station1 = myproject.Devices.CreateWithItem(station1_mlfb, 'station1', 'station1')
-#
-# print ('Creating station 2')
-# station2_mlfb = 'OrderNumber:6ES7 518-4AP00-0AB0/V2.6'
-# station2 = myproject.Devices.CreateWithItem(station2_mlfb, 'station2', 'station2')
+        # Добавление нетворка обработки аналогого датчика давления
+        if psa != 'No' or '':
+            self.change_glob_var_names(path_to_dest, '499VS', psa)
+        else:
+            self.delete_network(path_to_dest, '7A')
+
+        # возврат удаленных строк в конечный xml файл
+        self.return_xml_to_initial(name)
+
+    def inverter_cmd(self, name, num, m, autoname, rstname, alarmname, faultname):
+        if not name:
+            name = 'New_inverter'
+        if not num:
+            num = '9999'
+        if not m:
+            m = '999UF'
+        if not autoname:
+            autoname = 'AutoMan'
+        if not rstname:
+            rstname = 'Reset_Err_'
+        if not alarmname:
+            alarmname = 'General_Alarm'
+        # Пути для исходного xml файла и конечного
+        self.path_to_source = self.ExportPath + 'inverter.xml'
+        self.path_to_dest = self.ExportPath + name + '.xml'
+
+        # Удаление из xml строк которые мешают его обработке библиотекой lxml
+        self.preparing_xml(path_to_source, name)
+
+        # Замена названий блока, переменных и коментариев
+        self.set_block_name(path_to_dest, name, num)
+        self.change_glob_var_names(path_to_dest, 'Glob_rst', rstname)
+        self.change_glob_var_names(path_to_dest, 'Glob_Mode', autoname)
+        self.change_glob_var_names(path_to_dest, 'Системы_шкаф_Q4_Готовы', alarmname)
+        self.change_glob_var_names(path_to_dest, 'Fault_struct', faultname.split('.')[0])
+        self.change_glob_var_names(path_to_dest, 'Fault_name', faultname.split('.')[1])
+        self.change_var_names(path_to_dest, '453', m[:-2])
+        self.change_glob_var_names(path_to_dest, '453', m[:-2])
+
+        # возврат удаленных строк в конечный xml файл
+        self.return_xml_to_initial(name)
+
+    def preparing_xml(self, xmlFile, name):
+        """
+        Удаляет строку со ссылкой, которая не нравится lxml и копирует
+        в новый файл
+        :param xmlFile: Исходный файл образец компрессора
+        :param name: Имя блока на основе которого будет создан новый файл
+        :return: None
+        """
+        f = open(xmlFile, 'r', encoding="utf-8")
+        lines = f.readlines()
+        f.close()
+        f = open(self.ExportPath + 'tmp/' + name + '.xml', 'w', encoding="utf-8")
+        for line in lines:
+            if line.find(
+                    '<NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">') != -1:
+                f.write('          <NetworkSource><FlgNet>\n')
+            elif line.find(
+                    '<Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v2">') != -1:
+                f.write('    <Interface><Sections>' + '\n')
+            else:
+                f.write(line)
+        f.close()
+
+    def return_xml_to_initial(self, name):
+        """
+        Возврат удаленной ссылки функцией preparing_xml() на первоначальное место
+        :param name: Название xml файла
+        :return: None
+        """
+        f = open(self.ExportPath + 'tmp/' + name + '.xml', 'r', encoding="utf-8")
+        lines = f.readlines()
+        f.close()
+        f = open(self.ExportPath + 'tmp/' + name + '.xml', 'w', encoding="utf-8")
+        for line in lines:
+            if line.find('    <Interface><Sections>') != -1:
+                f.write(
+                    '    <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v2">' + '\n')
+            elif line.find('          <NetworkSource><FlgNet>') != -1:
+                f.write(
+                    '<NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">\n')
+            else:
+                f.write(line)
+        f.close()
+
+    def set_block_name(self, xmlFile, name, num):
+        """
+        Изменение названия и номера нового блока
+        :param xmlFile: Путь к файлу
+        :param name: Новой имя блока
+        :param num: Новый номер блока
+        :return: None
+        """
+        tree = etree.parse(xmlFile)
+        block_name = tree.xpath('/Document/SW.Blocks.FB/AttributeList/Name')
+        block_num = tree.xpath('/Document/SW.Blocks.FB/AttributeList/Number')
+        block_name[0].text = name
+        block_num[0].text = num
+        tree.write(xmlFile, encoding="utf-8")
+
+    def delete_network(self, xmlFile, network_id):
+        tree = etree.parse(xmlFile)
+        path_to_network = '//SW.Blocks.CompileUnit[@ID=' + "'" + str(network_id) + "']"
+        #    path = tree.xpath('/Document/SW.Blocks.FB/ObjectList/SW.Blocks.CompileUnit')
+        path = tree.xpath(path_to_network)
+        path[0].getparent().remove(path[0])
+        tree.write(xmlFile, encoding="utf-8")
+
+    def change_glob_var_names(self, path_to_file, old_name, new_name):
+        """
+        Изменяет глобальные названия тегов в нетворках
+        """
+        tree = etree.parse(path_to_file)
+
+        glob_variables = tree.xpath(
+            '/Document/SW.Blocks.FB/ObjectList/SW.Blocks.CompileUnit/AttributeList/NetworkSource/FlgNet/Parts/Access/Symbol/Component')  # Путь к именам переменных
+
+        for node in glob_variables:  # Перебираем элементы
+            # print(node.tag)
+            if node.get('Name').find(old_name) != -1:
+                node.set('Name', node.get('Name').replace(old_name, new_name))
+            # print('name =', node.get('Name'))  # Выводим параметр name
+            # print(node.text)  # Выводим текст элемента
+
+        tree.write(path_to_file, encoding="utf-8")
+
+    def change_var_names(self, path_to_file, old_name, new_name):
+        tree = etree.parse(path_to_file)
+
+        hmi_variables = tree.xpath(
+            '/Document/SW.Blocks.FB/AttributeList/Interface/Sections/Section/Member')  # Путь к именам переменных
+        block_variables = tree.xpath(
+            '/Document/SW.Blocks.FB/AttributeList/Interface/Sections/Section/Member/Member/Member')  # Путь к именам переменных
+
+        for node in block_variables:  # Перебираем элементы
+            # print(node.tag)
+            if node.get('Name').find(old_name) != -1:
+                node.set('Name', node.get('Name').replace(old_name, new_name))
+            # print('name =', node.get('Name'))  # Выводим параметр name
+            # print(node.text)  # Выводим текст элемента
+
+        for node in hmi_variables:  # Перебираем элементы
+            # print(node.tag)
+            if node.get('Name').find(old_name) != -1:
+                node.set('Name', node.get('Name').replace(old_name, new_name))
+            # print('name =', node.get('Name'))  # Выводим параметр name
+            # print(node.text)  # Выводим текст элемента
+        tree.write(path_to_file, encoding="utf-8")
