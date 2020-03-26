@@ -8,6 +8,7 @@ import os
 from PyQt5.QtCore import (QObject, pyqtSignal)
 from lxml import etree, objectify
 import re
+import templater
 
 
 class TiaHandler(QObject):
@@ -261,6 +262,10 @@ class TiaHandler(QObject):
     # --------------------------------------------------------
     # Методы для подготовки xml файла для импорта в TIA
     # --------------------------------------------------------
+    def generate_block(self, template_name):
+        template_config = Templater()
+        template_config.get_config(template_name)
+
     def compressor_cmd(self, name, num, ps, psa, m, autoname, rstname, alarmname, faultname):
         # Пути для исходного xml файла и конечного
         path_to_source = self.ExportPath + 'compressor.xml'

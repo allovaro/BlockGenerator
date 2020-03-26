@@ -315,3 +315,26 @@
 2020-03-24 16:43:39,330 - MyWindow - INFO - ERROR
 2020-03-24 16:43:54,443 - MyWindow - INFO - ERROR
 2020-03-24 16:46:09,090 - MyWindow - INFO - ERROR
+2020-03-25 08:08:09,376 - MyWindow - INFO - Program started
+2020-03-25 09:03:10,113 - MyWindow - INFO - Program started
+2020-03-26 14:41:49,752 - MyWindow - INFO - Program started
+2020-03-26 14:41:54,878 - TiaChooser - INFO - window opened
+2020-03-26 14:43:15,098 - TiaChooser - INFO - window opened
+2020-03-26 14:43:15,098 - TiaChooser - INFO - window opened
+2020-03-26 14:45:45,096 - MyWindow - INFO - Program started
+2020-03-26 14:45:49,957 - TiaChooser - INFO - window opened
+2020-03-26 14:48:21,158 - MyWindow - INFO - Program started
+2020-03-26 14:48:23,332 - TiaChooser - INFO - window opened
+2020-03-26 14:48:26,186 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\Ovsanoe_DK\Ovsanoe_DK.ap14
+2020-03-26 14:48:28,985 - TiaChooser - INFO - Z:\Projects\Siemens\Ovsanoe_DK\Ovsanoe_DK.ap14
+2020-03-26 14:56:13,721 - MyWindow - INFO - Program started
+2020-03-26 14:56:17,596 - TiaChooser - INFO - window opened
+2020-03-26 14:56:19,914 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\Ovsanoe_DK\Ovsanoe_DK.ap14
+2020-03-26 14:56:20,064 - TiaChooser - INFO - Z:\Projects\Siemens\Ovsanoe_DK\Ovsanoe_DK.ap14
+2020-03-26 14:56:28,846 - TiaHandler - INFO - Block Debug was exported
+2020-03-26 15:02:33,940 - MyWindow - INFO - Program started
+2020-03-26 15:02:39,285 - TiaChooser - INFO - window opened
+2020-03-26 15:02:50,661 - TiaHandler - INFO - Connected to Z:\Projects\Siemens\Ovsanoe_DK\Ovsanoe_DK.ap14
+2020-03-26 15:02:50,866 - TiaChooser - INFO - Z:\Projects\Siemens\Ovsanoe_DK\Ovsanoe_DK.ap14
+2020-03-26 15:39:33,763 - MyWindow - INFO - Program started
+2020-03-26 15:39:40,435 - TiaChooser - INFO - window opened
