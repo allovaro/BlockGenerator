@@ -1,6 +1,6 @@
 import clr
 import logging
-clr.AddReference('C:\\Program Files\\Siemens\\Automation\\Portal V14\PublicAPI\\V14 SP1\\Siemens.Engineering.dll')
+clr.AddReference('C:\\Program Files\\Siemens\\Automation\\Portal V14\\PublicAPI\\V14 SP1\\Siemens.Engineering.dll')
 import Siemens.Engineering as tia
 import Siemens.Engineering.HW.Features as hwf
 from System.IO import DirectoryInfo, FileInfo
