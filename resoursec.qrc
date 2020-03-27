@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="icons">
-    <file>hand.png</file>
-    <file>chip.png</file>
-  </qresource>
-</RCC>
