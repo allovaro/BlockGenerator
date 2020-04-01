@@ -13,7 +13,7 @@ class Ui_tia_chooser(object):
         tia_chooser.setObjectName("tia_chooser")
         tia_chooser.resize(306, 176)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("icons/3d.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         tia_chooser.setWindowIcon(icon)
 
         self.retranslateUi(tia_chooser)

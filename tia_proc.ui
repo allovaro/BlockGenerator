@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>icon.png</normaloff>icon.png</iconset>
+    <normaloff>icons/3d.ico</normaloff>icons/3d.ico</iconset>
   </property>
  </widget>
  <resources/>

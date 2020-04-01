@@ -1,10 +1,10 @@
 import clr
 import logging
-clr.AddReference('C:\\Program Files\\Siemens\\Automation\\Portal V14\\PublicAPI\\V14 SP1\\Siemens.Engineering.dll')
+import os
+clr.AddReference(os.path.abspath('Tia_API\\V14 SP1\\Siemens.Engineering.dll'))
 import Siemens.Engineering as tia
 import Siemens.Engineering.HW.Features as hwf
 from System.IO import DirectoryInfo, FileInfo
-import os
 from PyQt5.QtCore import (QObject, pyqtSignal)
 from lxml import etree, objectify
 import re
@@ -21,11 +21,12 @@ class TiaHandler(QObject):
     cpu = []
     software_container = None
     folders = []
-    ExportPath = 'templates/xml/'
+    TemplatePath = 'templates/xml/'
 
     def __init__(self, parent=None):
         super(TiaHandler, self).__init__(parent)
         self.init_logger()
+
         # self.compressor_cmd('57M_Compressor', '7898', 'No', 'No', '57M',
         #                     'Powder_B2_Load_Auto_Mode', 'Reset_Err_Silos_Area', 'Системы_шкаф_Q1_Готовы', 'FaultName.Melnica')
 
@@ -268,8 +269,8 @@ class TiaHandler(QObject):
 
     def compressor_cmd(self, name, num, ps, psa, m, autoname, rstname, alarmname, faultname):
         # Пути для исходного xml файла и конечного
-        path_to_source = self.ExportPath + 'compressor.xml'
-        path_to_dest = self.ExportPath + 'tmp/' + name + '.xml'
+        path_to_source = self.TemplatePath + 'compressor.xml'
+        path_to_dest = self.TemplatePath + 'tmp/' + name + '.xml'
 
         # Удаление из xml строк которые мешают его обработке библиотекой lxml
         self.preparing_xml(path_to_source, name)
@@ -280,8 +281,8 @@ class TiaHandler(QObject):
         self.change_glob_var_names(path_to_dest, 'Glob_Mode', autoname)
         self.change_glob_var_names(path_to_dest, 'Системы_шкаф_Q4_Готовы', alarmname)
         # Поиск бита аварии в Faults блоке данных
-        if os.path.isfile(self.ExportPath + 'Faults.xml') and ps != 'No':
-            path1, path2 = find_elem_by_name(self.ExportPath + 'Faults.xml', ps)
+        if os.path.isfile(self.TemplatePath + 'Faults.xml') and ps != 'No':
+            path1, path2 = find_elem_by_name(self.TemplatePath + 'Faults.xml', ps)
             self.change_glob_var_names(path_to_dest, 'Fault_name_2', path2)
         self.change_glob_var_names(path_to_dest, 'Fault_struct', faultname.split('.')[0])
         self.change_glob_var_names(path_to_dest, 'Fault_name', faultname.split('.')[1])
@@ -321,8 +322,8 @@ class TiaHandler(QObject):
         if not alarmname:
             alarmname = 'General_Alarm'
         # Пути для исходного xml файла и конечного
-        self.path_to_source = self.ExportPath + 'inverter.xml'
-        self.path_to_dest = self.ExportPath + name + '.xml'
+        self.path_to_source = self.TemplatePath + 'inverter.xml'
+        self.path_to_dest = self.TemplatePath + name + '.xml'
 
         # Удаление из xml строк которые мешают его обработке библиотекой lxml
         self.preparing_xml(path_to_source, name)
@@ -351,7 +352,7 @@ class TiaHandler(QObject):
         f = open(xmlFile, 'r', encoding="utf-8")
         lines = f.readlines()
         f.close()
-        f = open(self.ExportPath + 'tmp/' + name + '.xml', 'w', encoding="utf-8")
+        f = open(self.TemplatePath + 'tmp/' + name + '.xml', 'w', encoding="utf-8")
         for line in lines:
             if line.find(
                     '<NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v1">') != -1:
@@ -369,10 +370,10 @@ class TiaHandler(QObject):
         :param name: Название xml файла
         :return: None
         """
-        f = open(self.ExportPath + 'tmp/' + name + '.xml', 'r', encoding="utf-8")
+        f = open(self.TemplatePath + 'tmp/' + name + '.xml', 'r', encoding="utf-8")
         lines = f.readlines()
         f.close()
-        f = open(self.ExportPath + 'tmp/' + name + '.xml', 'w', encoding="utf-8")
+        f = open(self.TemplatePath + 'tmp/' + name + '.xml', 'w', encoding="utf-8")
         for line in lines:
             if line.find('    <Interface><Sections>') != -1:
                 f.write(

@@ -3,6 +3,7 @@ from PyQt5 import QtGui
 from PyQt5 import QtCore
 from mainwindow_ui import Ui_MainWindow  # импорт нашего сгенерированного файла
 from application import TiaChoose        # импорт окна для выбора проекта TIA Portal
+from application import TemplateGen
 from tia_handler import TiaHandler       # импорт класса для работы с Tia Portal
 import sys
 import os
@@ -23,6 +24,7 @@ class MyWindow(QtWidgets.QMainWindow):
     prj_config = None
     prj_file_path = None
     plc_name = ''
+    new_template_window = None
 
     def __init__(self):
         super(MyWindow, self).__init__()
@@ -57,19 +59,25 @@ class MyWindow(QtWidgets.QMainWindow):
                 self.create_project_tree(children[child], child_item)
 
     def main_slots(self):
-        self.ui.connect_action.triggered.connect(self.slot_connect_tia)
-        self.ui.exit_action.triggered.connect(self.close)
-        self.tia.attached_cpu.connect(self.print_cpu_tree)
-        self.ui.project_tree.doubleClicked.connect(self.print_blocks_tree)
-        self.ui.export_action.triggered.connect(self.export_blocks)
-        self.ui.import_action.triggered.connect(self.import_blocks)
-        self.ui.path_folder.triggered.connect(self.slot_folder_template)
-        self.ui.sync_action.triggered.connect(self.slot_sync_action)
-        self.ui.new_folder_action.triggered.connect(self.slot_new_folder)
+        # File Menu actions
         self.ui.open_action.triggered.connect(self.slot_open_project)
         self.ui.save_action.triggered.connect(self.save_project)
         self.ui.save_as_action.triggered.connect(self.save_project_as)
+        self.ui.export_action.triggered.connect(self.export_blocks)
+        self.ui.import_action.triggered.connect(self.import_blocks)
+        self.ui.exit_action.triggered.connect(self.close)
+        # TIA Menu actions
+        self.ui.connect_action.triggered.connect(self.slot_connect_tia)
+        self.ui.sync_action.triggered.connect(self.slot_sync_action)
+        self.ui.new_folder_action.triggered.connect(self.slot_new_folder)
+        # Template Menu actions
+        self.ui.path_folder.triggered.connect(self.slot_folder_template)
         self.ui.new_row_action.triggered.connect(self.add_table_empty_line)
+        self.ui.new_template_action.triggered.connect(self.slot_new_template)
+        # Project Tree signals/slots
+        self.tia.attached_cpu.connect(self.print_cpu_tree)
+        self.ui.project_tree.doubleClicked.connect(self.print_blocks_tree)
+        # MainTable widget signals/slots
         self.ui.tableWidget.cellActivated.connect(self.add_table_empty_line)
 
     def slot_connect_tia(self):
@@ -77,6 +85,10 @@ class MyWindow(QtWidgets.QMainWindow):
         window = TiaChoose(parent=self, tia=self.__processes)
         window.return_id.connect(self.tia.attach)
         window.show()
+
+    def slot_new_template(self):
+        self.window = TemplateGen()
+        self.window.show()
 
     def slot_folder_template(self):
         options = QtWidgets.QFileDialog.Options()
@@ -92,8 +104,8 @@ class MyWindow(QtWidgets.QMainWindow):
     def slot_open_project(self):
         options = QtWidgets.QFileDialog.Options()
         options |= QtWidgets.QFileDialog.DontUseNativeDialog
-        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self, "QFileDialog.getOpenFileName()", "",
-                                                             "All Files (*);;Project Files (*.prj)", options=options)
+        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Select Project file", "",
+                                                             "Project Files (*.prj);;All Files (*)", options=options)
         if fileName:
             self.prj_file_path = fileName
             self.prj_config = self.get_config(fileName)
@@ -383,7 +395,7 @@ class MyWindow(QtWidgets.QMainWindow):
 
     @staticmethod
     def get_templates_list():
-        # Каталог из которого будем брать изображения
+        # Каталог из которого будем брать шаблоны
         directory = 'templates'
         # Получаем список файлов в переменную files
         files = os.listdir(directory)
