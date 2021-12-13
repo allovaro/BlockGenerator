@@ -1,5 +1,5 @@
 configparser==5.0.0
-lxml==4.5.0
+lxml==4.6.5
 PyQt5==5.13.0
 PyQt5-sip==12.7.1
 python-dotenv==0.12.0
